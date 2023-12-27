@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="50B-CT-OW5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="50B-CT-OW5">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,9 +34,7 @@
                                 <rect key="frame" x="138" y="444" width="117" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="매점 구매하기">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="gray" image="제목_없는_아트워크 2"/>
                                 <connections>
                                     <action selector="buyFoodTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="TT9-bJ-eZa"/>
                                 </connections>
@@ -44,32 +43,16 @@
                                 <rect key="frame" x="261" y="445" width="117" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="예매 확인하기">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="gray" image="제목_없는_아트워크 3"/>
                                 <connections>
                                     <action selector="confirmTicketTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="UUl-pN-Dqj"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1175 2" translatesAutoresizingMaskIntoConstraints="NO" id="x4T-ce-dxw">
-                                <rect key="frame" x="93" y="453" width="209" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1177" translatesAutoresizingMaskIntoConstraints="NO" id="DQG-1k-8Dw">
-                                <rect key="frame" x="233" y="445" width="177" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1176" translatesAutoresizingMaskIntoConstraints="NO" id="iu5-Rc-2cj">
-                                <rect key="frame" x="-5" y="452" width="155" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohr-cJ-Dv9">
                                 <rect key="frame" x="14" y="443" width="117" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="티켓구매하기">
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="gray" image="제목_없는_아트워크"/>
                                 <connections>
                                     <action selector="buyTicketTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="xy9-B9-hz5"/>
                                 </connections>
@@ -111,13 +94,79 @@
                     <view key="view" contentMode="scaleToFill" id="m0G-CC-dh6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="67z-hU-MuM">
+                                <rect key="frame" x="0.0" y="159" width="393" height="693"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zg5-77-NPU">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell" id="MzL-X7-sKg" customClass="MyCollectionViewCell" customModule="Movie_Tickets_Booking" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sxs-Eq-iMH">
+                                            <rect key="frame" x="0.0" y="0.0" width="82" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jm3-cZ-8Q8">
+                                                    <rect key="frame" x="21" y="8" width="40" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="bs7-iE-xFU"/>
+                                                        <constraint firstAttribute="width" constant="40" id="ozJ-CV-JS4"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUu-bu-apK">
+                                                    <rect key="frame" x="20" y="56" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jm3-cZ-8Q8" firstAttribute="top" secondItem="sxs-Eq-iMH" secondAttribute="top" constant="8" id="5pH-dZ-ZIB"/>
+                                                <constraint firstAttribute="bottom" secondItem="qUu-bu-apK" secondAttribute="bottom" constant="8" id="65u-29-NDx"/>
+                                                <constraint firstItem="qUu-bu-apK" firstAttribute="centerX" secondItem="sxs-Eq-iMH" secondAttribute="centerX" id="Ady-Y2-s5h"/>
+                                                <constraint firstItem="qUu-bu-apK" firstAttribute="leading" secondItem="sxs-Eq-iMH" secondAttribute="leading" constant="20" id="BGa-vS-8p4"/>
+                                                <constraint firstItem="qUu-bu-apK" firstAttribute="top" secondItem="jm3-cZ-8Q8" secondAttribute="bottom" constant="8" id="cNi-Jb-e1X"/>
+                                                <constraint firstItem="jm3-cZ-8Q8" firstAttribute="centerX" secondItem="sxs-Eq-iMH" secondAttribute="centerX" id="pww-xB-TR6"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FpV-Lf-NUC">
+                                <rect key="frame" x="20" y="90" width="353" height="32"/>
+                                <color key="backgroundColor" red="0.2901961207" green="0.63921570780000003" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <segments>
+                                    <segment title="콤보"/>
+                                    <segment title="팝콘"/>
+                                    <segment title="음료"/>
+                                    <segment title="스낵"/>
+                                    <segment title="굿즈"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="25Y-CU-uaA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FpV-Lf-NUC" firstAttribute="centerX" secondItem="m0G-CC-dh6" secondAttribute="centerX" id="Ld8-oI-kd9"/>
+                            <constraint firstItem="67z-hU-MuM" firstAttribute="leading" secondItem="25Y-CU-uaA" secondAttribute="leading" id="MJg-O2-hW2"/>
+                            <constraint firstItem="67z-hU-MuM" firstAttribute="top" secondItem="FpV-Lf-NUC" secondAttribute="bottom" constant="20" id="OoB-Ce-LfH"/>
+                            <constraint firstAttribute="bottom" secondItem="67z-hU-MuM" secondAttribute="bottom" id="bf8-jL-cVd"/>
+                            <constraint firstItem="25Y-CU-uaA" firstAttribute="trailing" secondItem="67z-hU-MuM" secondAttribute="trailing" id="ekk-Sh-XHC"/>
+                            <constraint firstItem="67z-hU-MuM" firstAttribute="top" secondItem="25Y-CU-uaA" secondAttribute="top" constant="100" id="q3Z-hg-ayU"/>
+                            <constraint firstItem="FpV-Lf-NUC" firstAttribute="leading" secondItem="25Y-CU-uaA" secondAttribute="leading" constant="20" id="yMt-5N-hct"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aD-ye-0Fz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="654"/>
+            <point key="canvasLocation" x="820.61068702290072" y="653.52112676056345"/>
         </scene>
         <!--Ticket View Controller-->
         <scene sceneID="Y1l-UP-oWF">
@@ -166,15 +215,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_1175 2" width="800" height="800"/>
-        <image name="IMG_1176" width="224" height="224"/>
-        <image name="IMG_1177" width="1000" height="1080"/>
         <image name="KakaoTalk_Photo_2023-12-26-15-10-39" width="1900" height="790"/>
+        <image name="제목_없는_아트워크" width="116" height="260"/>
+        <image name="제목_없는_아트워크 2" width="116" height="260"/>
+        <image name="제목_없는_아트워크 3" width="116" height="260"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
