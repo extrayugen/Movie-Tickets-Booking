@@ -45,3 +45,16 @@ class cccController: UIViewController {
 }
 class dddViewController: UIViewController {
 }
+
+class TicketViewController: UIViewController
+{
+    
+    // MARK: - Ticket View Life Cycle
+    
+    @IBOutlet weak var movieView: UIImageView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+}
