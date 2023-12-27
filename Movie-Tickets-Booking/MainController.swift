@@ -20,6 +20,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupDateLabel()
+        updateDateTime()
         
     }
     
@@ -28,20 +30,41 @@ class MainViewController: UIViewController {
     @IBAction func buyTicketTapped(_ sender: UIButton) {
         // 티켓 구매 화면으로 전환하는 코드
     }
-
+    
     @IBAction func buyFoodTapped(_ sender: UIButton) {
         // 매점 구매 화면으로 전환하는 코드
     }
-
+    
     @IBAction func confirmTicketTapped(_ sender: UIButton) {
         // 예매 확인 화면으로 전환하는 코드
-    }}
-
+    }
+    
+    func setupDateLabel(){
+        dateLable.adjustsFontSizeToFitWidth = true
+        dateLable.minimumScaleFactor = 0.5 // 최소 50% 크기까지 폰트 크기 축소
+    }
+    
+    func updateDateTime() {
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.dateFormat = "yyyy년 MM월 dd일 a hh시 mm분"
+        dateLable.text = formatter.string(from: Date())
+        
+        // 옵션: Timer를 사용하여 날짜/시간을 주기적으로 업데이트
+        Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
+            self?.dateLable.text = formatter.string(from: Date())
+        }
+    }
+}
 class aaaViewController: UIViewController {
 }
+
 class bbbMarkectViewController: UIViewController {
 }
+
 class cccController: UIViewController {
+    
 }
 class dddViewController: UIViewController {
+    
 }
