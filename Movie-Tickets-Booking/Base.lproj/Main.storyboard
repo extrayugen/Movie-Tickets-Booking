@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="821" y="-35"/>
         </scene>
-        <!--Food Markect View Controller-->
+        <!--Food Market View Controller-->
         <scene sceneID="x8G-Yd-wqb">
             <objects>
-                <viewController id="IXA-pl-oko" customClass="FoodMarkectViewController" customModule="Movie_Tickets_Booking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IXA-pl-oko" customClass="FoodMarketViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m0G-CC-dh6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,15 +113,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="124" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jm3-cZ-8Q8">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jm3-cZ-8Q8">
                                                     <rect key="frame" x="25" y="8" width="74" height="85"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="bs7-iE-xFU"/>
                                                         <constraint firstAttribute="width" constant="40" id="ozJ-CV-JS4"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUu-bu-apK">
-                                                    <rect key="frame" x="20" y="64" width="84" height="85"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="prodoct name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUu-bu-apK">
+                                                    <rect key="frame" x="9" y="64" width="107" height="85"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="price infor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sY-aQ-Zp4">
+                                                    <rect key="frame" x="23.666666666666671" y="120" width="77" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -132,9 +138,11 @@
                                                 <constraint firstAttribute="bottom" secondItem="qUu-bu-apK" secondAttribute="bottom" constant="8" id="65u-29-NDx"/>
                                                 <constraint firstItem="qUu-bu-apK" firstAttribute="centerX" secondItem="sxs-Eq-iMH" secondAttribute="centerX" id="Ady-Y2-s5h"/>
                                                 <constraint firstItem="qUu-bu-apK" firstAttribute="leading" secondItem="sxs-Eq-iMH" secondAttribute="leading" constant="20" id="BGa-vS-8p4"/>
+                                                <constraint firstItem="3sY-aQ-Zp4" firstAttribute="centerX" secondItem="sxs-Eq-iMH" secondAttribute="centerX" id="Bsy-JI-lgg"/>
                                                 <constraint firstItem="qUu-bu-apK" firstAttribute="top" secondItem="sxs-Eq-iMH" secondAttribute="top" constant="60" id="Xxd-qP-i1c"/>
                                                 <constraint firstItem="qUu-bu-apK" firstAttribute="top" secondItem="jm3-cZ-8Q8" secondAttribute="bottom" constant="8" id="cNi-Jb-e1X"/>
                                                 <constraint firstItem="jm3-cZ-8Q8" firstAttribute="centerX" secondItem="sxs-Eq-iMH" secondAttribute="centerX" id="pww-xB-TR6"/>
+                                                <constraint firstItem="jm3-cZ-8Q8" firstAttribute="centerX" secondItem="sxs-Eq-iMH" secondAttribute="centerX" id="wZ9-t6-mK9"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="124" height="149"/>
