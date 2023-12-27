@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="50B-CT-OW5">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KakaoTalk_Photo_2023-12-26-15-10-39" translatesAutoresizingMaskIntoConstraints="NO" id="20H-2j-wCx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NEGABOX 로고" translatesAutoresizingMaskIntoConstraints="NO" id="20H-2j-wCx">
                                 <rect key="frame" x="-24" y="251" width="440" height="168"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -34,27 +35,27 @@
                                 <rect key="frame" x="138" y="444" width="117" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="제목_없는_아트워크 2"/>
+                                <buttonConfiguration key="configuration" style="gray" image="매점구매하기 버튼"/>
                                 <connections>
                                     <action selector="buyFoodTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="TT9-bJ-eZa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6H-vq-CNR">
-                                <rect key="frame" x="261" y="445" width="117" height="260"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="제목_없는_아트워크 3"/>
-                                <connections>
-                                    <action selector="confirmTicketTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="UUl-pN-Dqj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohr-cJ-Dv9">
                                 <rect key="frame" x="14" y="443" width="117" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="제목_없는_아트워크"/>
+                                <buttonConfiguration key="configuration" style="gray" image="티켓구매하기 버튼"/>
                                 <connections>
                                     <action selector="buyTicketTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="xy9-B9-hz5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6H-vq-CNR">
+                                <rect key="frame" x="261" y="444" width="117" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" image="예매확인하기 버튼"/>
+                                <connections>
+                                    <action selector="confirmTicketTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="UUl-pN-Dqj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -99,28 +100,28 @@
                                 <rect key="frame" x="0.0" y="159" width="393" height="693"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zg5-77-NPU">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="124" height="149"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell" id="MzL-X7-sKg" customClass="MyCollectionViewCell" customModule="Movie_Tickets_Booking" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="82" height="85"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="149"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sxs-Eq-iMH">
-                                            <rect key="frame" x="0.0" y="0.0" width="82" height="85"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="124" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jm3-cZ-8Q8">
-                                                    <rect key="frame" x="21" y="8" width="40" height="40"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jm3-cZ-8Q8">
+                                                    <rect key="frame" x="25" y="8" width="74" height="85"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="bs7-iE-xFU"/>
                                                         <constraint firstAttribute="width" constant="40" id="ozJ-CV-JS4"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUu-bu-apK">
-                                                    <rect key="frame" x="20" y="56" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUu-bu-apK">
+                                                    <rect key="frame" x="20" y="64" width="84" height="85"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -131,10 +132,12 @@
                                                 <constraint firstAttribute="bottom" secondItem="qUu-bu-apK" secondAttribute="bottom" constant="8" id="65u-29-NDx"/>
                                                 <constraint firstItem="qUu-bu-apK" firstAttribute="centerX" secondItem="sxs-Eq-iMH" secondAttribute="centerX" id="Ady-Y2-s5h"/>
                                                 <constraint firstItem="qUu-bu-apK" firstAttribute="leading" secondItem="sxs-Eq-iMH" secondAttribute="leading" constant="20" id="BGa-vS-8p4"/>
+                                                <constraint firstItem="qUu-bu-apK" firstAttribute="top" secondItem="sxs-Eq-iMH" secondAttribute="top" constant="60" id="Xxd-qP-i1c"/>
                                                 <constraint firstItem="qUu-bu-apK" firstAttribute="top" secondItem="jm3-cZ-8Q8" secondAttribute="bottom" constant="8" id="cNi-Jb-e1X"/>
                                                 <constraint firstItem="jm3-cZ-8Q8" firstAttribute="centerX" secondItem="sxs-Eq-iMH" secondAttribute="centerX" id="pww-xB-TR6"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="124" height="149"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -215,10 +218,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="KakaoTalk_Photo_2023-12-26-15-10-39" width="1900" height="790"/>
-        <image name="제목_없는_아트워크" width="116" height="260"/>
-        <image name="제목_없는_아트워크 2" width="116" height="260"/>
-        <image name="제목_없는_아트워크 3" width="116" height="260"/>
+        <image name="NEGABOX 로고" width="1900" height="790"/>
+        <image name="매점구매하기 버튼" width="116" height="260"/>
+        <image name="예매확인하기 버튼" width="116" height="260"/>
+        <image name="티켓구매하기 버튼" width="116" height="260"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
