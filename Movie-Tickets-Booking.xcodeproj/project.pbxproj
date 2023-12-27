@@ -13,6 +13,7 @@
 		1FB3063A2B3B1ED600A7BCAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB306382B3B1ED600A7BCAD /* Main.storyboard */; };
 		1FB3063C2B3B1ED700A7BCAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB3063B2B3B1ED700A7BCAD /* Assets.xcassets */; };
 		1FB3063F2B3B1ED700A7BCAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB3063D2B3B1ED700A7BCAD /* LaunchScreen.storyboard */; };
+		27499D582B3CA0C000CF306A /* FoodMarketInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27499D572B3CA0C000CF306A /* FoodMarketInfor.swift */; };
 		27B8E86F2B3BEDE300FC7CF4 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B8E86E2B3BEDE300FC7CF4 /* MyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		1FB3063B2B3B1ED700A7BCAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FB3063E2B3B1ED700A7BCAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FB306402B3B1ED700A7BCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27499D572B3CA0C000CF306A /* FoodMarketInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMarketInfor.swift; sourceTree = "<group>"; };
 		27B8E86E2B3BEDE300FC7CF4 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 				1FB306362B3B1ED600A7BCAD /* MainController.swift */,
 				27B8E86E2B3BEDE300FC7CF4 /* MyCollectionViewCell.swift */,
 				1FB306382B3B1ED600A7BCAD /* Main.storyboard */,
+				27499D572B3CA0C000CF306A /* FoodMarketInfor.swift */,
 				1FB3063B2B3B1ED700A7BCAD /* Assets.xcassets */,
 				1FB3063D2B3B1ED700A7BCAD /* LaunchScreen.storyboard */,
 				1FB306402B3B1ED700A7BCAD /* Info.plist */,
@@ -144,6 +147,7 @@
 				1FB306372B3B1ED600A7BCAD /* MainController.swift in Sources */,
 				1FB306332B3B1ED600A7BCAD /* AppDelegate.swift in Sources */,
 				27B8E86F2B3BEDE300FC7CF4 /* MyCollectionViewCell.swift in Sources */,
+				27499D582B3CA0C000CF306A /* FoodMarketInfor.swift in Sources */,
 				1FB306352B3B1ED600A7BCAD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

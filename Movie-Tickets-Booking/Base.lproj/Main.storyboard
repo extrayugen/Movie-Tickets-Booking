@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="50B-CT-OW5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="50B-CT-OW5">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -18,16 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NEGABOX 로고" translatesAutoresizingMaskIntoConstraints="NO" id="20H-2j-wCx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NEGABOX 로고" translatesAutoresizingMaskIntoConstraints="NO" id="20H-2j-wCx">
                                 <rect key="frame" x="-24" y="251" width="440" height="168"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="168" id="h3p-iP-O7w"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="날짜/ 요일/ 시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rv-od-eT8">
-                                <rect key="frame" x="17" y="109" width="361" height="123"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날짜/ 요일/ 시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rv-od-eT8">
+                                <rect key="frame" x="15" y="109" width="363" height="123"/>
                                 <color key="backgroundColor" red="0.2901961207" green="0.63921570780000003" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="Oqe-w3-3AJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" red="0.99607843159999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -35,7 +38,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nym-sG-BKF">
                                 <rect key="frame" x="138" y="444" width="117" height="260"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="메인/매점구매하기 버튼"/>
+                                <buttonConfiguration key="configuration" style="gray" image="메인/매점구매하기 버튼"/>
                                 <connections>
                                     <action selector="buyFoodTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="TT9-bJ-eZa"/>
                                 </connections>
@@ -43,7 +46,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohr-cJ-Dv9">
                                 <rect key="frame" x="14" y="443" width="117" height="260"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="메인/티켓구매하기 버튼"/>
+                                <buttonConfiguration key="configuration" style="gray" image="메인/티켓구매하기 버튼"/>
                                 <connections>
                                     <action selector="buyTicketTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="xy9-B9-hz5"/>
                                 </connections>
@@ -55,7 +58,7 @@
                                     <constraint firstAttribute="height" constant="260" id="dmt-FL-5q6"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="메인/예매확인하기 버튼"/>
+                                <buttonConfiguration key="configuration" style="gray" image="메인/예매확인하기 버튼"/>
                                 <connections>
                                     <action selector="confirmTicketTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="UUl-pN-Dqj"/>
                                 </connections>
@@ -67,15 +70,18 @@
                             <constraint firstItem="ohr-cJ-Dv9" firstAttribute="leading" secondItem="6S0-x2-IhZ" secondAttribute="leading" constant="14" id="0do-7p-aaJ"/>
                             <constraint firstItem="z6H-vq-CNR" firstAttribute="trailing" secondItem="6rv-od-eT8" secondAttribute="trailing" id="0op-TE-kaF"/>
                             <constraint firstItem="6S0-x2-IhZ" firstAttribute="bottom" secondItem="z6H-vq-CNR" secondAttribute="bottom" constant="114" id="2Ty-Tc-5qO"/>
+                            <constraint firstItem="6rv-od-eT8" firstAttribute="leading" secondItem="6S0-x2-IhZ" secondAttribute="leading" constant="15" id="5Pm-wb-N0H"/>
                             <constraint firstItem="Nym-sG-BKF" firstAttribute="leading" secondItem="ohr-cJ-Dv9" secondAttribute="trailing" constant="7" id="7Lj-v6-meb"/>
                             <constraint firstItem="20H-2j-wCx" firstAttribute="leading" secondItem="QDj-Dd-LTc" secondAttribute="leadingMargin" constant="-40" id="7UT-Ou-zwr"/>
                             <constraint firstItem="z6H-vq-CNR" firstAttribute="bottom" secondItem="Nym-sG-BKF" secondAttribute="bottom" id="8bw-R7-7c3"/>
                             <constraint firstItem="z6H-vq-CNR" firstAttribute="top" secondItem="20H-2j-wCx" secondAttribute="bottom" constant="25" id="Bqk-If-55R"/>
                             <constraint firstItem="20H-2j-wCx" firstAttribute="centerX" secondItem="Nym-sG-BKF" secondAttribute="centerX" id="GvS-2v-j2I"/>
+                            <constraint firstItem="6rv-od-eT8" firstAttribute="centerX" secondItem="QDj-Dd-LTc" secondAttribute="centerX" id="Lth-E7-Z9z"/>
                             <constraint firstItem="ohr-cJ-Dv9" firstAttribute="top" secondItem="20H-2j-wCx" secondAttribute="bottom" constant="24" id="TXL-gP-7Yu"/>
                             <constraint firstItem="z6H-vq-CNR" firstAttribute="leading" secondItem="Nym-sG-BKF" secondAttribute="trailing" constant="6" id="Uu4-4K-rjE"/>
                             <constraint firstItem="6S0-x2-IhZ" firstAttribute="trailing" secondItem="z6H-vq-CNR" secondAttribute="trailing" constant="15" id="WKR-b6-BWP"/>
                             <constraint firstItem="20H-2j-wCx" firstAttribute="top" secondItem="6rv-od-eT8" secondAttribute="bottom" constant="19" id="cnK-dq-oWa"/>
+                            <constraint firstItem="6rv-od-eT8" firstAttribute="centerX" secondItem="QDj-Dd-LTc" secondAttribute="centerX" id="isH-dN-6Vw"/>
                             <constraint firstItem="6S0-x2-IhZ" firstAttribute="bottom" secondItem="ohr-cJ-Dv9" secondAttribute="bottom" constant="115" id="mrR-cx-xjV"/>
                             <constraint firstItem="20H-2j-wCx" firstAttribute="centerX" secondItem="QDj-Dd-LTc" secondAttribute="centerX" id="n5W-3y-gdx"/>
                             <constraint firstItem="z6H-vq-CNR" firstAttribute="top" secondItem="Nym-sG-BKF" secondAttribute="top" id="oFP-gn-r6Z"/>
@@ -291,6 +297,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FpV-Lf-NUC">
+                                <rect key="frame" x="20" y="108" width="353" height="32"/>
+                                <color key="backgroundColor" red="0.2901961207" green="0.63921570780000003" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <segments>
+                                    <segment title="콤보"/>
+                                    <segment title="팝콘"/>
+                                    <segment title="음료"/>
+                                    <segment title="스낵"/>
+                                    <segment title="굿즈"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="67z-hU-MuM">
                                 <rect key="frame" x="0.0" y="159" width="393" height="693"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -308,21 +326,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="124" height="149"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jm3-cZ-8Q8">
-                                                    <rect key="frame" x="42" y="8" width="40" height="40"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jm3-cZ-8Q8">
+                                                    <rect key="frame" x="20" y="8" width="80" height="81"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="cDY-FQ-EH4"/>
                                                         <constraint firstAttribute="width" constant="40" id="ozJ-CV-JS4"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="prodoct name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUu-bu-apK">
-                                                    <rect key="frame" x="20" y="64" width="84" height="77"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price infor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sY-aQ-Zp4">
+                                                    <rect key="frame" x="23.666666666666664" y="120" width="76.666666666666686" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price infor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sY-aQ-Zp4">
-                                                    <rect key="frame" x="23.666666666666664" y="120" width="76.666666666666686" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="prodoct name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUu-bu-apK">
+                                                    <rect key="frame" x="18" y="63" width="84" height="77"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -342,21 +360,15 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="124" height="149"/>
+                                        <connections>
+                                            <outlet property="Foodmarket" destination="jm3-cZ-8Q8" id="OOh-bm-dq0"/>
+                                            <outlet property="foodImageView" destination="jm3-cZ-8Q8" id="WP5-KR-Yl2"/>
+                                            <outlet property="priceLabel" destination="3sY-aQ-Zp4" id="lfw-dl-VsQ"/>
+                                            <outlet property="productNameLabel" destination="qUu-bu-apK" id="uXx-K9-8dG"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FpV-Lf-NUC">
-                                <rect key="frame" x="20" y="108" width="353" height="32"/>
-                                <color key="backgroundColor" red="0.2901961207" green="0.63921570780000003" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <segments>
-                                    <segment title="콤보"/>
-                                    <segment title="팝콘"/>
-                                    <segment title="음료"/>
-                                    <segment title="스낵"/>
-                                    <segment title="굿즈"/>
-                                </segments>
-                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="25Y-CU-uaA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -370,6 +382,9 @@
                             <constraint firstItem="FpV-Lf-NUC" firstAttribute="leading" secondItem="25Y-CU-uaA" secondAttribute="leading" constant="20" id="yMt-5N-hct"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="foodSegmentedControl" destination="FpV-Lf-NUC" id="CKS-9C-tue"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aD-ye-0Fz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -477,13 +492,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NEGABOX 로고" width="1900" height="790"/>
+        <image name="NEGABOX 로고" width="1900" height="790"/>
         <image name="movie01" width="600" height="860"/>
         <image name="movie02" width="894" height="1280"/>
         <image name="movie03" width="800" height="1146"/>
-        <image name="메인/매점구매하기 버튼" width="116" height="260"/>
-        <image name="메인/예매확인하기 버튼" width="116" height="260"/>
-        <image name="메인/티켓구매하기 버튼" width="116" height="260"/>
+        <image name="메인/매점구매하기 버튼" width="116" height="260"/>
+        <image name="메인/예매확인하기 버튼" width="116" height="260"/>
+        <image name="메인/티켓구매하기 버튼" width="116" height="260"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
