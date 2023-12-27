@@ -3,7 +3,7 @@
 //  Movie-Tickets-Booking
 //
 //  Created by t2023-m0031 on 12/26/23.
-// 123123
+// test
 
 import UIKit
 
@@ -41,7 +41,32 @@ class aaaViewController: UIViewController {
 }
 class bbbMarkectViewController: UIViewController {
 }
-class cccController: UIViewController {
+
+class ShoppingCartController: UIViewController {
+    
+    
+   
+    
+    
+    
+    override func viewDidLoad() {
+         super.viewDidLoad()
+        
+    }
 }
+
 class dddViewController: UIViewController {
+}
+
+class TicketViewController: UIViewController
+{
+    
+    // MARK: - Ticket View Life Cycle
+    
+    @IBOutlet weak var movieView: UIImageView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
 }
