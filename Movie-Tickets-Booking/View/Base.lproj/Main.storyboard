@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="50B-CT-OW5">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -13,7 +13,7 @@
         <!--Main View Controller-->
         <scene sceneID="2Dy-Qa-EA5">
             <objects>
-                <viewController id="50B-CT-OW5" customClass="MainViewController" customModule="Movie_Tickets_Booking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="50B-CT-OW5" customClass="MainViewController" customModule="Movie_Tickets_Booking" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QDj-Dd-LTc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
                                 <buttonConfiguration key="configuration" style="gray" image="Main/BuyingFoods"/>
                                 <connections>
                                     <action selector="buyFoodTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="TT9-bJ-eZa"/>
-                                    <segue destination="IXA-pl-oko" kind="show" id="Yje-lH-1jD"/>
+                                    <segue destination="IXA-pl-oko" kind="show" id="hCx-cL-VHO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohr-cJ-Dv9">
@@ -301,10 +301,10 @@
             </objects>
             <point key="canvasLocation" x="820.61068702290072" y="-35.211267605633807"/>
         </scene>
-        <!--Food Market View Controller-->
+        <!--Food View Controller-->
         <scene sceneID="x8G-Yd-wqb">
             <objects>
-                <viewController id="IXA-pl-oko" customClass="FoodMarketViewController" customModule="Movie_Tickets_Booking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IXA-pl-oko" customClass="FoodViewController" customModule="Movie_Tickets_Booking" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m0G-CC-dh6">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,8 +320,11 @@
                                     <segment title="굿즈"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="onFoodMenuTypeChanged:" destination="IXA-pl-oko" eventType="valueChanged" id="tD4-r4-Mq9"/>
+                                </connections>
                             </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="67z-hU-MuM">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="67z-hU-MuM" customClass="foodCollectionView">
                                 <rect key="frame" x="0.0" y="100" width="393" height="742"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zg5-77-NPU">
@@ -331,7 +334,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell" id="MzL-X7-sKg" customClass="MyCollectionViewCell" customModule="Movie_Tickets_Booking" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell" id="MzL-X7-sKg" customClass="FoodCollectionViewCell" customModule="Movie_Tickets_Booking" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="124" height="149"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sxs-Eq-iMH">
@@ -352,7 +355,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="prodoct name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUu-bu-apK">
-                                                    <rect key="frame" x="18" y="63" width="84" height="77"/>
+                                                    <rect key="frame" x="18" y="79" width="84" height="49"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -373,10 +376,9 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="124" height="149"/>
                                         <connections>
-                                            <outlet property="Foodmarket" destination="jm3-cZ-8Q8" id="OOh-bm-dq0"/>
-                                            <outlet property="foodImageView" destination="jm3-cZ-8Q8" id="WP5-KR-Yl2"/>
-                                            <outlet property="priceLabel" destination="3sY-aQ-Zp4" id="lfw-dl-VsQ"/>
-                                            <outlet property="productNameLabel" destination="qUu-bu-apK" id="uXx-K9-8dG"/>
+                                            <outlet property="foodImage" destination="jm3-cZ-8Q8" id="GDI-JX-0Mk"/>
+                                            <outlet property="priceInfo" destination="3sY-aQ-Zp4" id="vue-85-jAe"/>
+                                            <outlet property="productName" destination="qUu-bu-apK" id="ykF-ep-pTc"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -385,6 +387,7 @@
                         <viewLayoutGuide key="safeArea" id="25Y-CU-uaA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="67z-hU-MuM" firstAttribute="centerX" secondItem="25Y-CU-uaA" secondAttribute="centerX" id="4hu-Nv-GXI"/>
                             <constraint firstItem="FpV-Lf-NUC" firstAttribute="centerX" secondItem="m0G-CC-dh6" secondAttribute="centerX" id="Ld8-oI-kd9"/>
                             <constraint firstItem="67z-hU-MuM" firstAttribute="leading" secondItem="25Y-CU-uaA" secondAttribute="leading" id="MJg-O2-hW2"/>
                             <constraint firstItem="67z-hU-MuM" firstAttribute="top" secondItem="FpV-Lf-NUC" secondAttribute="bottom" constant="20" id="OoB-Ce-LfH"/>
@@ -396,12 +399,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="hbe-X2-ewn"/>
                     <connections>
-                        <outlet property="foodSegmentedControl" destination="FpV-Lf-NUC" id="CKS-9C-tue"/>
+                        <outlet property="foodCollectionView" destination="67z-hU-MuM" id="hVR-at-5Mw"/>
+                        <outlet property="foodSegmentControl" destination="FpV-Lf-NUC" id="sbW-kK-Sar"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aD-ye-0Fz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="706"/>
+            <point key="canvasLocation" x="820.61068702290072" y="705.63380281690149"/>
         </scene>
         <!--Shopping Cart Controller-->
         <scene sceneID="H73-Tx-g0g">
@@ -516,10 +520,10 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray4Color">
-            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

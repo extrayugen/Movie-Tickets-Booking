@@ -6,6 +6,22 @@
 //
 
 import UIKit
+
+class FoodCollectionViewCell: UICollectionViewCell{
+    
+    @IBOutlet weak var foodImage: UIImageView!
+    @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var priceInfo: UILabel!
+    
+    func setup(with comboItems: Fooditems){
+        foodImage.image = comboItems.image
+        productName.text = comboItems.name
+        priceInfo.text = comboItems.price
+    }
+    
+}
+
+
 struct Fooditems{
     let name : String
     let image : UIImage

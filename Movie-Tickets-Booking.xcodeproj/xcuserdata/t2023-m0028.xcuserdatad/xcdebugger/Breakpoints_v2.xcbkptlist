@@ -3,4 +3,129 @@
    uuid = "0ABAF098-69A5-4FB9-A1FD-55EC4A3245A3"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69C18615-E3B2-4353-BEDC-EBC48F62C96C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movie-Tickets-Booking/Controller/FoodViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "69C18615-E3B2-4353-BEDC-EBC48F62C96C - 52f50dbb5ecb69c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Tickets_Booking.FoodViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Movie_Tickets_Booking.FoodViewController"
+                  moduleName = "Movie-Tickets-Booking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/t2023-m0028/Desktop/%E1%84%89%E1%85%B3%E1%84%91%E1%85%A1%E1%84%85%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%86%B8/Movie-Tickets-Booking/Movie-Tickets-Booking/Controller/FoodViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "69C18615-E3B2-4353-BEDC-EBC48F62C96C - 6ea6555cdb2bd5d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Tickets_Booking.FoodViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Movie_Tickets_Booking.FoodViewController"
+                  moduleName = "Movie-Tickets-Booking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/t2023-m0028/Desktop/%E1%84%89%E1%85%B3%E1%84%91%E1%85%A1%E1%84%85%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%86%B8/Movie-Tickets-Booking/Movie-Tickets-Booking/Controller/FoodViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "69C18615-E3B2-4353-BEDC-EBC48F62C96C - 3991bfec787d1f4e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Tickets_Booking.FoodViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Movie_Tickets_Booking.FoodViewController&gt;"
+                  moduleName = "Movie-Tickets-Booking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/t2023-m0028/Desktop/%E1%84%89%E1%85%B3%E1%84%91%E1%85%A1%E1%84%85%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%86%B8/Movie-Tickets-Booking/Movie-Tickets-Booking/Controller/FoodViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "69C18615-E3B2-4353-BEDC-EBC48F62C96C - 3aa97516bff96e96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Tickets_Booking.FoodViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Movie_Tickets_Booking.FoodViewController&gt;"
+                  moduleName = "Movie-Tickets-Booking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/t2023-m0028/Desktop/%E1%84%89%E1%85%B3%E1%84%91%E1%85%A1%E1%84%85%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%86%B8/Movie-Tickets-Booking/Movie-Tickets-Booking/Controller/FoodViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "69C18615-E3B2-4353-BEDC-EBC48F62C96C - 46c665c194e4d96d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Tickets_Booking.FoodViewController.__deallocating_deinit"
+                  moduleName = "Movie-Tickets-Booking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/t2023-m0028/Desktop/%E1%84%89%E1%85%B3%E1%84%91%E1%85%A1%E1%84%85%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%86%B8/Movie-Tickets-Booking/Movie-Tickets-Booking/Controller/FoodViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "69C18615-E3B2-4353-BEDC-EBC48F62C96C - 6ea6555cdb2bd5d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Tickets_Booking.FoodViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Movie_Tickets_Booking.FoodViewController"
+                  moduleName = "Movie-Tickets-Booking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/t2023-m0028/Desktop/%E1%84%89%E1%85%B3%E1%84%91%E1%85%A1%E1%84%85%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%86%B8/Movie-Tickets-Booking/Movie-Tickets-Booking/Controller/FoodViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "69C18615-E3B2-4353-BEDC-EBC48F62C96C - 3aa97516bff96e96"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movie_Tickets_Booking.FoodViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Movie_Tickets_Booking.FoodViewController&gt;"
+                  moduleName = "Movie-Tickets-Booking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/t2023-m0028/Desktop/%E1%84%89%E1%85%B3%E1%84%91%E1%85%A1%E1%84%85%E1%85%B3%E1%84%90%E1%85%A1%E1%84%8F%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A5%E1%86%B8/Movie-Tickets-Booking/Movie-Tickets-Booking/Controller/FoodViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
