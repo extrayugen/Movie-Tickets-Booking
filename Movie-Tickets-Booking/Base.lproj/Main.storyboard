@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NEGABOX 로고" translatesAutoresizingMaskIntoConstraints="NO" id="20H-2j-wCx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NEGABOXLogo" translatesAutoresizingMaskIntoConstraints="NO" id="20H-2j-wCx">
                                 <rect key="frame" x="-24" y="251" width="440" height="168"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="168" id="h3p-iP-O7w"/>
@@ -38,7 +38,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nym-sG-BKF">
                                 <rect key="frame" x="138" y="444" width="117" height="260"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="메인/매점구매하기 버튼"/>
+                                <buttonConfiguration key="configuration" style="gray" image="Main/BuyingFoods"/>
                                 <connections>
                                     <action selector="buyFoodTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="TT9-bJ-eZa"/>
                                 </connections>
@@ -46,7 +46,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohr-cJ-Dv9">
                                 <rect key="frame" x="14" y="443" width="117" height="260"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="메인/티켓구매하기 버튼"/>
+                                <buttonConfiguration key="configuration" style="gray" image="Main/BuyingTicket"/>
                                 <connections>
                                     <action selector="buyTicketTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="xy9-B9-hz5"/>
                                 </connections>
@@ -58,7 +58,7 @@
                                     <constraint firstAttribute="height" constant="260" id="dmt-FL-5q6"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="메인/예매확인하기 버튼"/>
+                                <buttonConfiguration key="configuration" style="gray" image="Main/CheckingReservation"/>
                                 <connections>
                                     <action selector="confirmTicketTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="UUl-pN-Dqj"/>
                                 </connections>
@@ -492,13 +492,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NEGABOX 로고" width="1900" height="790"/>
+        <image name="Main/BuyingFoods" width="116" height="260"/>
+        <image name="Main/BuyingTicket" width="116" height="260"/>
+        <image name="Main/CheckingReservation" width="116" height="260"/>
+        <image name="NEGABOXLogo" width="1900" height="790"/>
         <image name="movie01" width="600" height="860"/>
         <image name="movie02" width="894" height="1280"/>
         <image name="movie03" width="800" height="1146"/>
-        <image name="메인/매점구매하기 버튼" width="116" height="260"/>
-        <image name="메인/예매확인하기 버튼" width="116" height="260"/>
-        <image name="메인/티켓구매하기 버튼" width="116" height="260"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
