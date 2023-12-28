@@ -4,22 +4,19 @@
 //
 //  Created by t2023-m0028 on 12/28/23.
 //
-
-import Foundation
 import UIKit
 
 class FoodViewController: UIViewController {
 
-    @IBOutlet weak var foodSegmentControl: UISegmentedControl!
-   @IBOutlet weak var foodCollectionView: UICollectionView!
-    
+    @IBOutlet var foodSegmentControl: UISegmentedControl!
+    @IBOutlet var foodCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("FoodViewController - viewDidLoad() called")
-        
+       
+        foodCollectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         foodCollectionView.dataSource = self
-        foodCollectionView.delegate = self
-                
+              foodCollectionView.delegate = self
     }
     @IBAction func onFoodMenuTypeChanged(_ sender: UISegmentedControl) {
         print("FoodViewController - onFoodMenuTypeChanged() called / sender.selectedSegmentIndex : \(sender.selectedSegmentIndex)")
@@ -41,7 +38,6 @@ extension FoodViewController : UICollectionViewDataSource {
         return cell
     }
     
-
 }
 
 extension FoodViewController : UICollectionViewDelegate {

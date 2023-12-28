@@ -41,7 +41,7 @@
                                 <buttonConfiguration key="configuration" style="gray" image="Main/BuyingFoods"/>
                                 <connections>
                                     <action selector="buyFoodTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="TT9-bJ-eZa"/>
-                                    <segue destination="IXA-pl-oko" kind="show" id="hCx-cL-VHO"/>
+                                    <segue destination="IXA-pl-oko" kind="show" id="QHq-am-cVi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohr-cJ-Dv9">
@@ -63,6 +63,7 @@
                                 <buttonConfiguration key="configuration" style="gray" image="Main/CheckingReservation"/>
                                 <connections>
                                     <action selector="confirmTicketTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="UUl-pN-Dqj"/>
+                                    <segue destination="V7G-kS-6pD" kind="show" id="3Io-XH-yNm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -309,7 +310,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FpV-Lf-NUC">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FpV-Lf-NUC" userLabel="foodSegmentControl">
                                 <rect key="frame" x="20" y="49" width="353" height="32"/>
                                 <color key="backgroundColor" red="0.2901961207" green="0.63921570780000003" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <segments>
@@ -321,10 +322,10 @@
                                 </segments>
                                 <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="onFoodMenuTypeChanged:" destination="IXA-pl-oko" eventType="valueChanged" id="tD4-r4-Mq9"/>
+                                    <action selector="onFoodMenuTypeChanged:" destination="IXA-pl-oko" eventType="valueChanged" id="K87-XD-PMj"/>
                                 </connections>
                             </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="67z-hU-MuM" customClass="foodCollectionView">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="67z-hU-MuM" userLabel="foodCollectionView">
                                 <rect key="frame" x="0.0" y="100" width="393" height="742"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Zg5-77-NPU">
@@ -399,8 +400,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="hbe-X2-ewn"/>
                     <connections>
-                        <outlet property="foodCollectionView" destination="67z-hU-MuM" id="hVR-at-5Mw"/>
-                        <outlet property="foodSegmentControl" destination="FpV-Lf-NUC" id="sbW-kK-Sar"/>
+                        <outlet property="foodCollectionView" destination="67z-hU-MuM" id="4wZ-VY-c9C"/>
+                        <outlet property="foodSegmentControl" destination="FpV-Lf-NUC" id="uWa-2I-ONa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aD-ye-0Fz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -412,7 +413,7 @@
             <objects>
                 <viewController id="V7G-kS-6pD" customClass="ShoppingCartController" customModule="Movie_Tickets_Booking" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZwS-qH-HsJ">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="구매 내역 확인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTM-AH-KLs">
@@ -502,6 +503,7 @@
                         <viewLayoutGuide key="safeArea" id="Fd9-pP-Vcd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sEO-V7-0Nb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgG-rd-QT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
