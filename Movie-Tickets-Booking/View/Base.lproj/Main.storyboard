@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CRM-yX-fAr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CRM-yX-fAr">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -106,75 +106,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TMv-dj-4A7">
-                                <rect key="frame" x="0.0" y="47" width="393" height="759"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TMv-dj-4A7">
+                                <rect key="frame" x="0.0" y="47" width="393" height="622"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="uOK-L8-smb">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                    <connections>
-                                        <action selector="check:" destination="CRM-yX-fAr" eventType="touchUpInside" id="qqh-fQ-Se5"/>
-                                    </connections>
-                                </button>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="140" id="N94-8P-BzM">
-                                        <rect key="frame" x="0.0" y="94" width="393" height="140"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N94-8P-BzM" id="Nzc-cL-Obo">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movie01" translatesAutoresizingMaskIntoConstraints="NO" id="fO1-Xi-CaF">
-                                                    <rect key="frame" x="20" y="5" width="130" height="130"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="130" id="DFH-0M-gbm"/>
-                                                        <constraint firstAttribute="width" constant="130" id="xrO-eL-enE"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4v-En-UxC">
-                                                    <rect key="frame" x="158.66666666666666" y="5" width="76" height="35"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="10 : 00">
-                                                        <backgroundConfiguration key="background">
-                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                                        </backgroundConfiguration>
-                                                    </buttonConfiguration>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTT-DR-j8T">
-                                                    <rect key="frame" x="158.66666666666666" y="52.666666666666657" width="76" height="35"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="12 : 00">
-                                                        <backgroundConfiguration key="background">
-                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                                        </backgroundConfiguration>
-                                                    </buttonConfiguration>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmp-cB-08u">
-                                                    <rect key="frame" x="158.66666666666666" y="100" width="76" height="35"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="14 : 00">
-                                                        <backgroundConfiguration key="background">
-                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                                        </backgroundConfiguration>
-                                                    </buttonConfiguration>
-                                                </button>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="PTT-DR-j8T" firstAttribute="centerX" secondItem="Nzc-cL-Obo" secondAttribute="centerX" id="Iw7-Ku-IPH"/>
-                                                <constraint firstItem="fO1-Xi-CaF" firstAttribute="leading" secondItem="Nzc-cL-Obo" secondAttribute="leadingMargin" id="UFX-3N-d91"/>
-                                                <constraint firstItem="Z4v-En-UxC" firstAttribute="centerX" secondItem="Nzc-cL-Obo" secondAttribute="centerX" id="czd-1V-tiW"/>
-                                                <constraint firstItem="lmp-cB-08u" firstAttribute="centerX" secondItem="Nzc-cL-Obo" secondAttribute="centerX" id="dDh-Hd-Cew"/>
-                                                <constraint firstItem="fO1-Xi-CaF" firstAttribute="bottom" secondItem="lmp-cB-08u" secondAttribute="bottom" id="iS1-gD-2lZ"/>
-                                                <constraint firstItem="fO1-Xi-CaF" firstAttribute="centerY" secondItem="PTT-DR-j8T" secondAttribute="centerY" id="n5p-ed-GjI"/>
-                                                <constraint firstItem="fO1-Xi-CaF" firstAttribute="centerY" secondItem="Nzc-cL-Obo" secondAttribute="centerY" id="qqb-wz-TqF"/>
-                                                <constraint firstItem="fO1-Xi-CaF" firstAttribute="top" secondItem="Z4v-En-UxC" secondAttribute="top" id="vHr-6Z-Q8x"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="140" id="2Nk-fx-u9m">
-                                        <rect key="frame" x="0.0" y="234" width="393" height="140"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="140" id="2Nk-fx-u9m">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Nk-fx-u9m" id="PvH-UY-AXK">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
@@ -187,7 +125,7 @@
                                                         <constraint firstAttribute="height" constant="130" id="cv5-AE-1YD"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZC-qR-wLP">
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZC-qR-wLP">
                                                     <rect key="frame" x="158.66666666666666" y="5" width="76" height="35"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="10 : 00">
@@ -196,7 +134,7 @@
                                                         </backgroundConfiguration>
                                                     </buttonConfiguration>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUF-3F-Cgc">
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUF-3F-Cgc">
                                                     <rect key="frame" x="158.66666666666666" y="52.666666666666657" width="76" height="35"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="12 : 00">
@@ -205,7 +143,7 @@
                                                         </backgroundConfiguration>
                                                     </buttonConfiguration>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYK-eV-kTZ">
+                                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYK-eV-kTZ">
                                                     <rect key="frame" x="158.66666666666666" y="100" width="76" height="35"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="14 : 00">
@@ -227,72 +165,15 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="140" id="l8j-YO-IHA">
-                                        <rect key="frame" x="0.0" y="374" width="393" height="140"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l8j-YO-IHA" id="1is-wd-A22">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZN-15-jVy">
-                                                    <rect key="frame" x="158.66666666666666" y="6" width="76" height="35"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="10 : 00">
-                                                        <backgroundConfiguration key="background">
-                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                                        </backgroundConfiguration>
-                                                    </buttonConfiguration>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDB-e2-Z8t">
-                                                    <rect key="frame" x="158.66666666666666" y="53" width="76" height="35"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="12 : 00">
-                                                        <backgroundConfiguration key="background">
-                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                                        </backgroundConfiguration>
-                                                    </buttonConfiguration>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R77-gm-Kwe">
-                                                    <rect key="frame" x="158.66666666666666" y="99" width="76" height="35"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="14 : 00">
-                                                        <backgroundConfiguration key="background">
-                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                                        </backgroundConfiguration>
-                                                    </buttonConfiguration>
-                                                </button>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="movie03" translatesAutoresizingMaskIntoConstraints="NO" id="dxX-vy-8GT">
-                                                    <rect key="frame" x="20" y="10" width="130" height="130"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="130" id="Y7p-ht-XsR"/>
-                                                        <constraint firstAttribute="height" constant="130" id="iNf-LN-dve"/>
-                                                    </constraints>
-                                                </imageView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ZDB-e2-Z8t" firstAttribute="centerX" secondItem="1is-wd-A22" secondAttribute="centerX" id="1Dq-3H-Lqo"/>
-                                                <constraint firstItem="iZN-15-jVy" firstAttribute="centerX" secondItem="1is-wd-A22" secondAttribute="centerX" id="2Ob-x2-a4n"/>
-                                                <constraint firstItem="R77-gm-Kwe" firstAttribute="bottom" secondItem="dxX-vy-8GT" secondAttribute="bottom" id="A0b-yb-lrv"/>
-                                                <constraint firstItem="R77-gm-Kwe" firstAttribute="leading" secondItem="dxX-vy-8GT" secondAttribute="trailing" constant="17" id="H75-La-qEf"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="R77-gm-Kwe" secondAttribute="bottom" constant="-5" id="J5q-y6-CJB"/>
-                                                <constraint firstItem="ZDB-e2-Z8t" firstAttribute="top" secondItem="iZN-15-jVy" secondAttribute="bottom" constant="12" id="T1c-YT-84M"/>
-                                                <constraint firstItem="R77-gm-Kwe" firstAttribute="top" secondItem="ZDB-e2-Z8t" secondAttribute="bottom" constant="11" id="brk-gl-0Xa"/>
-                                                <constraint firstItem="R77-gm-Kwe" firstAttribute="centerX" secondItem="1is-wd-A22" secondAttribute="centerX" id="obP-fk-KcJ"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6AE-PL-ojX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="TMv-dj-4A7" firstAttribute="leading" secondItem="6AE-PL-ojX" secondAttribute="leading" id="BOn-fx-7pr"/>
-                            <constraint firstItem="6AE-PL-ojX" firstAttribute="bottom" secondItem="TMv-dj-4A7" secondAttribute="bottom" id="JNO-3y-q1B"/>
-                            <constraint firstItem="6AE-PL-ojX" firstAttribute="trailing" secondItem="TMv-dj-4A7" secondAttribute="trailing" id="nMx-J3-BeB"/>
-                            <constraint firstItem="TMv-dj-4A7" firstAttribute="top" secondItem="6AE-PL-ojX" secondAttribute="top" id="p19-RP-oOb"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tickeTableView" destination="TMv-dj-4A7" id="EaJ-Dv-tZA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KbY-Mr-wWW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -505,9 +386,7 @@
         <image name="Main/BuyingTicket" width="116" height="260"/>
         <image name="Main/CheckingReservation" width="116" height="260"/>
         <image name="NEGABOXLogo" width="1900" height="790"/>
-        <image name="movie01" width="600" height="860"/>
         <image name="movie02" width="894" height="1280"/>
-        <image name="movie03" width="800" height="1146"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
