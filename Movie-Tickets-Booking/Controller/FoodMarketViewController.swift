@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-class MyCollectionViewCell: UICollectionViewCell {
+class FoodMarketViewController: UICollectionViewCell {
     @IBOutlet weak var foodSegmentedControl: UISegmentedControl!
     @IBOutlet weak var foodImageView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!

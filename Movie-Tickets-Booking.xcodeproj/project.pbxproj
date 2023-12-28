@@ -9,25 +9,29 @@
 /* Begin PBXBuildFile section */
 		1FB306332B3B1ED600A7BCAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB306322B3B1ED600A7BCAD /* AppDelegate.swift */; };
 		1FB306352B3B1ED600A7BCAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB306342B3B1ED600A7BCAD /* SceneDelegate.swift */; };
-		1FB306372B3B1ED600A7BCAD /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB306362B3B1ED600A7BCAD /* MainController.swift */; };
+		1FB306372B3B1ED600A7BCAD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB306362B3B1ED600A7BCAD /* MainViewController.swift */; };
 		1FB3063A2B3B1ED600A7BCAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB306382B3B1ED600A7BCAD /* Main.storyboard */; };
 		1FB3063C2B3B1ED700A7BCAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB3063B2B3B1ED700A7BCAD /* Assets.xcassets */; };
 		1FB3063F2B3B1ED700A7BCAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB3063D2B3B1ED700A7BCAD /* LaunchScreen.storyboard */; };
+		1FCC23332B3D4CF0000326CF /* ShoppingCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC23322B3D4CF0000326CF /* ShoppingCartController.swift */; };
+		1FCC23352B3D4D05000326CF /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC23342B3D4D05000326CF /* TicketViewController.swift */; };
 		27499D582B3CA0C000CF306A /* FoodMarketInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27499D572B3CA0C000CF306A /* FoodMarketInfor.swift */; };
-		27B8E86F2B3BEDE300FC7CF4 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B8E86E2B3BEDE300FC7CF4 /* MyCollectionViewCell.swift */; };
+		27B8E86F2B3BEDE300FC7CF4 /* FoodMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B8E86E2B3BEDE300FC7CF4 /* FoodMarketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1FB3062F2B3B1ED600A7BCAD /* Movie-Tickets-Booking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie-Tickets-Booking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB306322B3B1ED600A7BCAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FB306342B3B1ED600A7BCAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1FB306362B3B1ED600A7BCAD /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		1FB306362B3B1ED600A7BCAD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1FB306392B3B1ED600A7BCAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FB3063B2B3B1ED700A7BCAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FB3063E2B3B1ED700A7BCAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FB306402B3B1ED700A7BCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FCC23322B3D4CF0000326CF /* ShoppingCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartController.swift; sourceTree = "<group>"; };
+		1FCC23342B3D4D05000326CF /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		27499D572B3CA0C000CF306A /* FoodMarketInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMarketInfor.swift; sourceTree = "<group>"; };
-		27B8E86E2B3BEDE300FC7CF4 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		27B8E86E2B3BEDE300FC7CF4 /* FoodMarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMarketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +64,51 @@
 		1FB306312B3B1ED600A7BCAD /* Movie-Tickets-Booking */ = {
 			isa = PBXGroup;
 			children = (
-				1FB306322B3B1ED600A7BCAD /* AppDelegate.swift */,
-				1FB306342B3B1ED600A7BCAD /* SceneDelegate.swift */,
-				1FB306362B3B1ED600A7BCAD /* MainController.swift */,
-				27B8E86E2B3BEDE300FC7CF4 /* MyCollectionViewCell.swift */,
-				1FB306382B3B1ED600A7BCAD /* Main.storyboard */,
-				27499D572B3CA0C000CF306A /* FoodMarketInfor.swift */,
-				1FB3063B2B3B1ED700A7BCAD /* Assets.xcassets */,
-				1FB3063D2B3B1ED700A7BCAD /* LaunchScreen.storyboard */,
-				1FB306402B3B1ED700A7BCAD /* Info.plist */,
+				1FCC23302B3D4C24000326CF /* Model */,
+				1FCC23312B3D4C5F000326CF /* View */,
+				1FCC232E2B3D4BA4000326CF /* Controller */,
+				1FCC232F2B3D4BC9000326CF /* Supports */,
 			);
 			path = "Movie-Tickets-Booking";
+			sourceTree = "<group>";
+		};
+		1FCC232E2B3D4BA4000326CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FB306362B3B1ED600A7BCAD /* MainViewController.swift */,
+				1FCC23342B3D4D05000326CF /* TicketViewController.swift */,
+				27B8E86E2B3BEDE300FC7CF4 /* FoodMarketViewController.swift */,
+				1FCC23322B3D4CF0000326CF /* ShoppingCartController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1FCC232F2B3D4BC9000326CF /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				1FB306322B3B1ED600A7BCAD /* AppDelegate.swift */,
+				1FB306342B3B1ED600A7BCAD /* SceneDelegate.swift */,
+				1FB306402B3B1ED700A7BCAD /* Info.plist */,
+				1FB3063D2B3B1ED700A7BCAD /* LaunchScreen.storyboard */,
+				1FB3063B2B3B1ED700A7BCAD /* Assets.xcassets */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		1FCC23302B3D4C24000326CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27499D572B3CA0C000CF306A /* FoodMarketInfor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FCC23312B3D4C5F000326CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FB306382B3B1ED600A7BCAD /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FB306372B3B1ED600A7BCAD /* MainController.swift in Sources */,
+				1FB306372B3B1ED600A7BCAD /* MainViewController.swift in Sources */,
+				1FCC23332B3D4CF0000326CF /* ShoppingCartController.swift in Sources */,
 				1FB306332B3B1ED600A7BCAD /* AppDelegate.swift in Sources */,
-				27B8E86F2B3BEDE300FC7CF4 /* MyCollectionViewCell.swift in Sources */,
+				27B8E86F2B3BEDE300FC7CF4 /* FoodMarketViewController.swift in Sources */,
 				27499D582B3CA0C000CF306A /* FoodMarketInfor.swift in Sources */,
+				1FCC23352B3D4D05000326CF /* TicketViewController.swift in Sources */,
 				1FB306352B3B1ED600A7BCAD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
