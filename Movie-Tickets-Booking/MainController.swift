@@ -61,18 +61,33 @@ class aaaViewController: UIViewController {
 
 class bbbMarkectViewController: UIViewController {
 }
-
+// MARK: - ShoppingCart
 class ShoppingCartController: UIViewController {
+    // 영화 예매 정보 참조
+    @IBOutlet weak var movieImageView: UIImageView!
+    @IBOutlet weak var movieInfoStack: UIStackView!
+    @IBOutlet weak var movieNameLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var numberOfPeopleLabel: UILabel!
+    @IBOutlet weak var priceLabel: UIStackView!
     
+    // 매점 구매 정보 참조
+    @IBOutlet weak var foodBuyTableView: UITableView!
     
-   
+    // 총금액, 결제
+    @IBOutlet weak var totalPriceLabel: UILabel!
     
-    
+    @IBOutlet weak var paymentLabel: UIButton!
     
     override func viewDidLoad() {
          super.viewDidLoad()
         
     }
+    
+    
+    @IBAction func didTapPaymentButton(_ sender: Any) {
+    }
+    
 }
 
 class dddViewController: UIViewController {
