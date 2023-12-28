@@ -64,6 +64,7 @@
 		1FB306312B3B1ED600A7BCAD /* Movie-Tickets-Booking */ = {
 			isa = PBXGroup;
 			children = (
+				1FB306402B3B1ED700A7BCAD /* Info.plist */,
 				1FCC23302B3D4C24000326CF /* Model */,
 				1FCC23312B3D4C5F000326CF /* View */,
 				1FCC232E2B3D4BA4000326CF /* Controller */,
@@ -87,9 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				1FB306322B3B1ED600A7BCAD /* AppDelegate.swift */,
-				1FB306342B3B1ED600A7BCAD /* SceneDelegate.swift */,
-				1FB306402B3B1ED700A7BCAD /* Info.plist */,
 				1FB3063D2B3B1ED700A7BCAD /* LaunchScreen.storyboard */,
+				1FB306342B3B1ED600A7BCAD /* SceneDelegate.swift */,
 				1FB3063B2B3B1ED700A7BCAD /* Assets.xcassets */,
 			);
 			path = Supports;
