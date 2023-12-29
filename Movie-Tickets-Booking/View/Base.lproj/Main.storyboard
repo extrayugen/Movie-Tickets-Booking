@@ -41,7 +41,7 @@
                                 <buttonConfiguration key="configuration" style="gray" image="Main/BuyingFoods"/>
                                 <connections>
                                     <action selector="buyFoodTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="TT9-bJ-eZa"/>
-                                    <segue destination="48l-jf-tGn" kind="show" id="EDq-Gy-OrZ"/>
+                                    <segue destination="U90-VV-Kaj" kind="show" id="UKy-vp-l2A"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohr-cJ-Dv9">
@@ -303,19 +303,16 @@
             <point key="canvasLocation" x="820.61068702290072" y="-35.211267605633807"/>
         </scene>
         <!--Food View Controller-->
-        <scene sceneID="ohS-dF-4YD">
+        <scene sceneID="CCk-YD-aT0">
             <objects>
-                <viewController id="48l-jf-tGn" customClass="FoodViewController" customModule="Movie_Tickets_Booking" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="B3g-qt-gTy">
+                <viewController id="U90-VV-Kaj" customClass="FoodViewController" customModule="Movie_Tickets_Booking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MeA-FO-37F">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="z8Y-yj-FYD">
-                                <rect key="frame" x="16" y="60" width="361" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c2Y-PW-7es">
+                                <rect key="frame" x="15" y="60" width="363" height="32"/>
                                 <color key="backgroundColor" red="0.2901961207" green="0.63529413940000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="340" id="a5e-LY-7HV"/>
-                                </constraints>
                                 <segments>
                                     <segment title="콤보"/>
                                     <segment title="팝콘"/>
@@ -323,75 +320,90 @@
                                     <segment title="스낵"/>
                                     <segment title="굿즈"/>
                                 </segments>
-                                <color key="selectedSegmentTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UpC-Iz-0JF">
-                                <rect key="frame" x="16" y="114" width="361" height="696"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Fj1-Rr-2PQ">
+                                <rect key="frame" x="15" y="121" width="363" height="691"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jk1-10-0XZ">
-                                    <size key="itemSize" width="112" height="162"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eSF-si-GGq">
+                                    <size key="itemSize" width="164" height="216"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="foodCollectionViewCell" id="Tcz-Jj-ckp" customClass="foodCollectionViewCell" customModule="Movie_Tickets_Booking" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="112" height="162"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCollectionViewCell" id="dos-LY-i0v" customClass="FoodCollectionViewCell" customModule="Movie_Tickets_Booking" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="216"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lLT-pK-qEt">
-                                            <rect key="frame" x="0.0" y="0.0" width="112" height="162"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7mv-Nl-Hxa">
+                                            <rect key="frame" x="0.0" y="0.0" width="164" height="216"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YTP-pQ-JAI">
-                                                    <rect key="frame" x="17" y="8" width="79" height="82"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c1J-i7-fo9">
+                                                    <rect key="frame" x="21" y="10" width="122" height="130"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="130" id="VXc-Rb-j6Q"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuj-ap-we4">
-                                                    <rect key="frame" x="8" y="98" width="96" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="foodName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDv-5o-glk">
+                                                    <rect key="frame" x="5" y="150" width="154" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c1h-u5-JJG">
-                                                    <rect key="frame" x="8" y="125" width="96" height="29"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="foodPrice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eF-8J-7IR">
+                                                    <rect key="frame" x="5" y="181" width="154" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="YTP-pQ-JAI" firstAttribute="centerX" secondItem="lLT-pK-qEt" secondAttribute="centerX" id="SoV-JM-D2s"/>
+                                                <constraint firstItem="c1J-i7-fo9" firstAttribute="top" secondItem="7mv-Nl-Hxa" secondAttribute="top" constant="10" id="5rp-xT-9Ws"/>
+                                                <constraint firstAttribute="trailing" secondItem="4eF-8J-7IR" secondAttribute="trailing" constant="5" id="Aog-Rk-khS"/>
+                                                <constraint firstItem="c1J-i7-fo9" firstAttribute="centerX" secondItem="7mv-Nl-Hxa" secondAttribute="centerX" id="Dd2-YO-hYX"/>
+                                                <constraint firstItem="4eF-8J-7IR" firstAttribute="centerX" secondItem="7mv-Nl-Hxa" secondAttribute="centerX" id="FF9-0v-faI"/>
+                                                <constraint firstAttribute="trailing" secondItem="tDv-5o-glk" secondAttribute="trailing" constant="5" id="Jv9-eq-U1j"/>
+                                                <constraint firstItem="tDv-5o-glk" firstAttribute="top" secondItem="c1J-i7-fo9" secondAttribute="bottom" constant="10" id="VSR-aI-ROG"/>
+                                                <constraint firstItem="4eF-8J-7IR" firstAttribute="top" secondItem="tDv-5o-glk" secondAttribute="bottom" constant="10" id="cp6-ho-cx3"/>
+                                                <constraint firstItem="tDv-5o-glk" firstAttribute="centerX" secondItem="7mv-Nl-Hxa" secondAttribute="centerX" id="dre-I0-42z"/>
+                                                <constraint firstItem="c1J-i7-fo9" firstAttribute="leading" secondItem="7mv-Nl-Hxa" secondAttribute="leading" constant="21" id="hEc-QI-V9o"/>
+                                                <constraint firstItem="4eF-8J-7IR" firstAttribute="leading" secondItem="7mv-Nl-Hxa" secondAttribute="leading" constant="5" id="t1a-pT-AxC"/>
+                                                <constraint firstItem="tDv-5o-glk" firstAttribute="leading" secondItem="7mv-Nl-Hxa" secondAttribute="leading" constant="5" id="wVG-dV-4UR"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <size key="customSize" width="112" height="162"/>
+                                        <size key="customSize" width="164" height="216"/>
                                         <connections>
-                                            <outlet property="image" destination="YTP-pQ-JAI" id="sf5-AQ-TxX"/>
-                                            <outlet property="name" destination="iuj-ap-we4" id="t2Y-eb-Fab"/>
-                                            <outlet property="price" destination="c1h-u5-JJG" id="jht-Zm-p08"/>
+                                            <outlet property="foodImage" destination="c1J-i7-fo9" id="XLo-RI-OE5"/>
+                                            <outlet property="foodName" destination="tDv-5o-glk" id="j6J-Oc-qT3"/>
+                                            <outlet property="foodPrice" destination="4eF-8J-7IR" id="gd1-ym-oXM"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="95m-fM-hTd"/>
+                        <viewLayoutGuide key="safeArea" id="Uqv-Bg-7Hz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="UpC-Iz-0JF" firstAttribute="centerX" secondItem="B3g-qt-gTy" secondAttribute="centerX" id="QDA-KF-YAi"/>
-                            <constraint firstItem="z8Y-yj-FYD" firstAttribute="top" secondItem="95m-fM-hTd" secondAttribute="top" constant="60" id="oXP-pA-KWi"/>
-                            <constraint firstItem="z8Y-yj-FYD" firstAttribute="centerX" secondItem="B3g-qt-gTy" secondAttribute="centerX" id="w75-qe-gCJ"/>
+                            <constraint firstItem="Uqv-Bg-7Hz" firstAttribute="trailing" secondItem="Fj1-Rr-2PQ" secondAttribute="trailing" constant="15" id="9E0-N2-O0q"/>
+                            <constraint firstItem="Uqv-Bg-7Hz" firstAttribute="bottom" secondItem="Fj1-Rr-2PQ" secondAttribute="bottom" constant="30" id="KT1-Gt-6SG"/>
+                            <constraint firstItem="c2Y-PW-7es" firstAttribute="centerX" secondItem="MeA-FO-37F" secondAttribute="centerX" id="SAi-OV-45q"/>
+                            <constraint firstItem="c2Y-PW-7es" firstAttribute="top" secondItem="Uqv-Bg-7Hz" secondAttribute="top" constant="60" id="ZhL-XW-tJB"/>
+                            <constraint firstItem="Fj1-Rr-2PQ" firstAttribute="top" secondItem="c2Y-PW-7es" secondAttribute="bottom" constant="30" id="a6v-Cv-7tj"/>
+                            <constraint firstItem="Fj1-Rr-2PQ" firstAttribute="leading" secondItem="Uqv-Bg-7Hz" secondAttribute="leading" constant="15" id="j04-HB-ZPm"/>
+                            <constraint firstItem="c2Y-PW-7es" firstAttribute="leading" secondItem="Uqv-Bg-7Hz" secondAttribute="leading" constant="15" id="wsH-eD-ci3"/>
+                            <constraint firstItem="Fj1-Rr-2PQ" firstAttribute="centerX" secondItem="MeA-FO-37F" secondAttribute="centerX" id="xLh-lc-LVF"/>
+                            <constraint firstItem="Uqv-Bg-7Hz" firstAttribute="trailing" secondItem="c2Y-PW-7es" secondAttribute="trailing" constant="15" id="xy3-rY-zFP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="AcI-Nd-3ex"/>
+                    <navigationItem key="navigationItem" id="P1w-Fs-Idd"/>
                     <connections>
-                        <outlet property="foodCollectionView" destination="UpC-Iz-0JF" id="Gbs-xo-7yZ"/>
-                        <outlet property="foodSegmentControl" destination="z8Y-yj-FYD" id="Oi6-yV-TKG"/>
+                        <outlet property="foodCollectionView" destination="Fj1-Rr-2PQ" id="N4A-fj-jml"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f5k-Ov-qeQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pj-dr-CYU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17.557251908396946" y="695.77464788732402"/>
+            <point key="canvasLocation" x="52.671755725190835" y="725.35211267605632"/>
         </scene>
         <!--Shopping Cart Controller-->
         <scene sceneID="H73-Tx-g0g">
@@ -492,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NgG-rd-QT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="821" y="642"/>
+            <point key="canvasLocation" x="821" y="696"/>
         </scene>
     </scenes>
     <resources>
