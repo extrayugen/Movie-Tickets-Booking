@@ -18,6 +18,7 @@
 		27499D582B3CA0C000CF306A /* FoodMarketInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27499D572B3CA0C000CF306A /* FoodMarketInfor.swift */; };
 		27B8E86F2B3BEDE300FC7CF4 /* FoodMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B8E86E2B3BEDE300FC7CF4 /* FoodMarketViewController.swift */; };
 		FFFFEFA72B3D7DB7002E5823 /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFFEFA62B3D7DB7002E5823 /* MovieInfo.swift */; };
+		FFFFEFCD2B3E4C5E002E5823 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFFEFCC2B3E4C5E002E5823 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		27499D572B3CA0C000CF306A /* FoodMarketInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMarketInfor.swift; sourceTree = "<group>"; };
 		27B8E86E2B3BEDE300FC7CF4 /* FoodMarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMarketViewController.swift; sourceTree = "<group>"; };
 		FFFFEFA62B3D7DB7002E5823 /* MovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
+		FFFFEFCC2B3E4C5E002E5823 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				1FCC23342B3D4D05000326CF /* TicketViewController.swift */,
 				27B8E86E2B3BEDE300FC7CF4 /* FoodMarketViewController.swift */,
 				1FCC23322B3D4CF0000326CF /* ShoppingCartController.swift */,
+				FFFFEFCC2B3E4C5E002E5823 /* CustomTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFFEFCD2B3E4C5E002E5823 /* CustomTableViewCell.swift in Sources */,
 				1FB306372B3B1ED600A7BCAD /* MainViewController.swift in Sources */,
 				1FCC23332B3D4CF0000326CF /* ShoppingCartController.swift in Sources */,
 				1FB306332B3B1ED600A7BCAD /* AppDelegate.swift in Sources */,

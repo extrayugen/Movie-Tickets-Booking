@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CRM-yX-fAr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CRM-yX-fAr">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -111,59 +111,60 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="140" id="2Nk-fx-u9m">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="140" id="2Nk-fx-u9m" customClass="CustomTableViewCell" customModule="Movie_Tickets_Booking" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Nk-fx-u9m" id="PvH-UY-AXK">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movie02" translatesAutoresizingMaskIntoConstraints="NO" id="r6h-oK-HVh">
-                                                    <rect key="frame" x="20" y="5" width="130" height="130"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r6h-oK-HVh">
+                                                    <rect key="frame" x="20" y="10" width="130" height="120"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="130" id="LEn-z3-94y"/>
                                                         <constraint firstAttribute="height" constant="130" id="cv5-AE-1YD"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZC-qR-wLP">
-                                                    <rect key="frame" x="158.66666666666666" y="5" width="76" height="35"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMh-Jb-CTh">
+                                                    <rect key="frame" x="159" y="10" width="228" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZs-dZ-ucN">
+                                                    <rect key="frame" x="162" y="43" width="67" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="10 : 00">
-                                                        <backgroundConfiguration key="background">
-                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                                        </backgroundConfiguration>
-                                                    </buttonConfiguration>
+                                                    <buttonConfiguration key="configuration" style="gray" title="10:00"/>
                                                 </button>
-                                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUF-3F-Cgc">
-                                                    <rect key="frame" x="158.66666666666666" y="52.666666666666657" width="76" height="35"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvc-K2-99p">
+                                                    <rect key="frame" x="252" y="43" width="67" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="12 : 00">
-                                                        <backgroundConfiguration key="background">
-                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                                        </backgroundConfiguration>
-                                                    </buttonConfiguration>
+                                                    <buttonConfiguration key="configuration" style="gray" title="12:00"/>
                                                 </button>
-                                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYK-eV-kTZ">
-                                                    <rect key="frame" x="158.66666666666666" y="100" width="76" height="35"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leg-Kt-lnh">
+                                                    <rect key="frame" x="162" y="86" width="68" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="14 : 00">
-                                                        <backgroundConfiguration key="background">
-                                                            <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                                        </backgroundConfiguration>
-                                                    </buttonConfiguration>
+                                                    <buttonConfiguration key="configuration" style="gray" title="14:00"/>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="r6h-oK-HVh" firstAttribute="top" secondItem="SZC-qR-wLP" secondAttribute="top" id="9tA-Rd-IZq"/>
-                                                <constraint firstItem="r6h-oK-HVh" firstAttribute="bottom" secondItem="oYK-eV-kTZ" secondAttribute="bottom" id="EV2-Hc-4tr"/>
-                                                <constraint firstItem="r6h-oK-HVh" firstAttribute="centerY" secondItem="bUF-3F-Cgc" secondAttribute="centerY" id="MEd-fh-bUF"/>
-                                                <constraint firstItem="oYK-eV-kTZ" firstAttribute="centerX" secondItem="PvH-UY-AXK" secondAttribute="centerX" id="RAG-OJ-aZe"/>
+                                                <constraint firstAttribute="bottom" secondItem="r6h-oK-HVh" secondAttribute="bottom" constant="10" id="NAX-0g-uhh"/>
                                                 <constraint firstItem="r6h-oK-HVh" firstAttribute="leading" secondItem="PvH-UY-AXK" secondAttribute="leadingMargin" id="ZSm-In-npa"/>
-                                                <constraint firstItem="bUF-3F-Cgc" firstAttribute="centerX" secondItem="PvH-UY-AXK" secondAttribute="centerX" id="eI2-zA-J5o"/>
-                                                <constraint firstItem="SZC-qR-wLP" firstAttribute="centerX" secondItem="PvH-UY-AXK" secondAttribute="centerX" id="iSF-BK-SYr"/>
+                                                <constraint firstItem="r6h-oK-HVh" firstAttribute="top" secondItem="PvH-UY-AXK" secondAttribute="top" constant="10" id="ctl-NE-nnd"/>
                                                 <constraint firstItem="r6h-oK-HVh" firstAttribute="centerY" secondItem="PvH-UY-AXK" secondAttribute="centerY" id="ofx-ID-qWc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="iconImageView" destination="r6h-oK-HVh" id="go9-Qf-Hcl"/>
+                                            <outlet property="timeButton01" destination="OZs-dZ-ucN" id="geQ-ny-glk"/>
+                                            <outlet property="timeButton02" destination="Vvc-K2-99p" id="w4c-Pv-Quo"/>
+                                            <outlet property="timeButton03" destination="leg-Kt-lnh" id="0L9-dv-4pP"/>
+                                            <outlet property="title" destination="ZMh-Jb-CTh" id="x38-n1-4ON"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -386,12 +387,8 @@
         <image name="Main/BuyingTicket" width="116" height="260"/>
         <image name="Main/CheckingReservation" width="116" height="260"/>
         <image name="NEGABOXLogo" width="1900" height="790"/>
-        <image name="movie02" width="894" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

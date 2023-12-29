@@ -10,9 +10,17 @@ import UIKit
 
 struct MovieInfo {
     var title: String
-    var time: String
+    var time01: String
+    var time02: String
+    var time03: String
     var people: Int
     var price: Int
-    var movieImage: UIImage
+    var movieImage: String
 }
 
+let movie: [MovieInfo] = [
+    MovieInfo(title: "서울의 봄", time01: "10:00", time02: "12:00", time03: "14:00", people: 0, price: 7000, movieImage: "movie01"),
+    MovieInfo(title: "노량", time01: "10:00", time02: "12:00", time03: "14:00", people: 0, price: 7000, movieImage: "movie02"),
+    MovieInfo(title: "짱구는 못말려 극장판", time01: "10:00", time02: "12:00", time03: "14:00", people: 0, price: 7000, movieImage: "movie03"),
+    
+]

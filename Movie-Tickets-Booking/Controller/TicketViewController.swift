@@ -2,30 +2,17 @@ import Foundation
 import UIKit
 
 
-class TicketViewController: UIViewController
+class TicketViewController: UIViewController, UITableViewDataSource
 {
 
     @IBOutlet weak var ticketTableView: UITableView!
     
     var selectedMovie: MovieInfo?
     
-    var movie: [MovieInfo] = [
-        MovieInfo(title: "서울의 봄", time: "10:00", people: 0, price: 7000, movieImage: UIImage.movie01),
-        MovieInfo(title: "서울의 봄", time: "12:00", people: 0, price: 7000, movieImage: UIImage.movie01),
-        MovieInfo(title: "서울의 봄", time: "14:00", people: 0, price: 7000, movieImage: UIImage.movie01),
-        MovieInfo(title: "노량", time: "10:00", people: 0, price: 7000, movieImage: UIImage.movie02),
-        MovieInfo(title: "노량", time: "12:00", people: 0, price: 7000, movieImage: UIImage.movie02),
-        MovieInfo(title: "노량", time: "14:00", people: 0, price: 7000, movieImage: UIImage.movie02),
-        MovieInfo(title: "짱구는 못말려 극장판", time: "10:00", people: 0, price: 7000, movieImage: UIImage.movie03),
-        MovieInfo(title: "짱구는 못말려 극장판", time: "12:00", people: 0, price: 7000, movieImage: UIImage.movie03),
-        MovieInfo(title: "짱구는 못말려 극장판", time: "14:00", people: 0, price: 7000, movieImage: UIImage.movie03)
-        
-    ]
-    
-    
     // MARK: - Ticket View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "영화 내역"
         
         ticketTableView.delegate = self
         ticketTableView.dataSource = self
@@ -41,7 +28,7 @@ class TicketViewController: UIViewController
         
         switch selectedMovie {
         case let  movieInfo?:
-            print("영화제목: \(movieInfo.title), 예매시간: \(movieInfo.time), 인원수: \(movieInfo.people), 가격: \(movieInfo.price)")
+            print("영화제목: \(movieInfo.title), 예매시간: \(movieInfo.time01), 인원수: \(movieInfo.people), 가격: \(movieInfo.price)")
         case nil:
             print("No movie selected.")
         }
@@ -50,10 +37,20 @@ class TicketViewController: UIViewController
     
 }
 
-extension TicketViewController: UITableViewDelegate, UITableViewDataSource {
+extension TicketViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
+        let movie = movie[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
+        
+        cell.iconImageView.image = UIImage(named: movie.movieImage)
+        cell.title.text = movie.title
+
+        //cell.timeButton01.text = movie.time01
+        //cell.timeButton02.text = movie.time02
+        //cell.timeButton03.text = movie.time03
+        
+        cell.indentationWidth = 150
         //cell.textLabel?.text = movie[indexPath.row]
         return cell
     }
@@ -63,5 +60,8 @@ extension TicketViewController: UITableViewDelegate, UITableViewDataSource {
         return movie.count
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
     
 }
