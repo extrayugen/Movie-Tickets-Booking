@@ -14,10 +14,10 @@
             filePath = "Movie-Tickets-Booking/Controller/FoodViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "8"
-            endingLineNumber = "8"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "FoodCellDelegate"
+            landmarkType = "5">
             <Locations>
                <Location
                   uuid = "69C18615-E3B2-4353-BEDC-EBC48F62C96C - 52f50dbb5ecb69c6"
