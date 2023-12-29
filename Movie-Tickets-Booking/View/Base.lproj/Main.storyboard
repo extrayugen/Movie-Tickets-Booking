@@ -325,33 +325,33 @@
                                 <rect key="frame" x="15" y="121" width="363" height="691"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eSF-si-GGq">
-                                    <size key="itemSize" width="164" height="216"/>
+                                    <size key="itemSize" width="176" height="241"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodCollectionViewCell" id="dos-LY-i0v" customClass="FoodCollectionViewCell" customModule="Movie_Tickets_Booking" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="164" height="216"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="241"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7mv-Nl-Hxa">
-                                            <rect key="frame" x="0.0" y="0.0" width="164" height="216"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="176" height="241"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c1J-i7-fo9">
-                                                    <rect key="frame" x="21" y="10" width="122" height="130"/>
+                                                    <rect key="frame" x="21" y="10" width="134" height="130"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="130" id="VXc-Rb-j6Q"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="foodName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDv-5o-glk">
-                                                    <rect key="frame" x="5" y="150" width="154" height="21"/>
+                                                    <rect key="frame" x="5" y="150" width="166" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="foodPrice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eF-8J-7IR">
-                                                    <rect key="frame" x="5" y="181" width="154" height="21"/>
+                                                    <rect key="frame" x="5" y="181" width="166" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -372,7 +372,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <size key="customSize" width="164" height="216"/>
+                                        <size key="customSize" width="176" height="241"/>
                                         <connections>
                                             <outlet property="foodImage" destination="c1J-i7-fo9" id="XLo-RI-OE5"/>
                                             <outlet property="foodName" destination="tDv-5o-glk" id="j6J-Oc-qT3"/>
@@ -399,6 +399,7 @@
                     <navigationItem key="navigationItem" id="P1w-Fs-Idd"/>
                     <connections>
                         <outlet property="foodCollectionView" destination="Fj1-Rr-2PQ" id="N4A-fj-jml"/>
+                        <outlet property="foodSegmentControl" destination="c2Y-PW-7es" id="dpl-V2-H3v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1pj-dr-CYU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

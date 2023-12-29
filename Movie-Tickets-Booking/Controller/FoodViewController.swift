@@ -7,11 +7,14 @@
 import UIKit
 
 class FoodViewController: UIViewController {
+    @IBOutlet weak var foodSegmentControl: UISegmentedControl!
     @IBOutlet weak var foodCollectionView: UICollectionView!
     
     override func viewDidLoad() {
          super.viewDidLoad()
          foodCollectionView.dataSource = self
+        foodCollectionView.delegate = self
+        foodCollectionView.collectionViewLayout = UICollectionViewFlowLayout()
      }
  }
 
@@ -25,3 +28,9 @@ class FoodViewController: UIViewController {
          return cell
      }
  }
+
+extension FoodViewController: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 150, height: 220)
+    }
+}
