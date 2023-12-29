@@ -61,7 +61,7 @@ class FoodViewController: UIViewController {
 
     extension FoodViewController: UICollectionViewDelegateFlowLayout, FoodCellDelegate {
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            return CGSize(width: 150, height: 220)
+            return CGSize(width: 175, height: 220)
         }
 
         func foodCellDidTap(food: foodItems) {
