@@ -45,5 +45,5 @@
         foodItems(name: "3D짱구피규어셋트", image: UIImage(named: "3DShinchanFigureSet")!, price: 23000),
         foodItems(name: "꾸래핑음료컵", image: UIImage(named: "OkeydokeypingCup")!, price: 19500),
         foodItems(name: "하츄핑음료컵", image: UIImage(named: "HeartspingCup")!, price: 19500),
-        foodItems(name: "마이크와조스키팝콘버켓", image: UIImage(named: "MikeWazowskiBucket")!, price: 32000)
+        foodItems(name: "마이크 와조스키 팝콘버켓", image: UIImage(named: "MikeWazowskiBucket")!, price: 32000)
     ]
