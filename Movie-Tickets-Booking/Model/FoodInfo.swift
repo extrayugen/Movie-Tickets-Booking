@@ -21,8 +21,8 @@
         foodItems(name: "갈릭팝콘L", image: UIImage(named: "GarlicPopcornL")!, price: 6500),
         foodItems(name: "더블카라멜팝콘R", image: UIImage(named: "CaramelPopcornR")!, price: 7000),
         foodItems(name: "더블카라멜팝콘L", image: UIImage(named: "CaramelPopcornL")!, price: 7500),
-        foodItems(name: "오리지널+갈릭팝콘L", image: UIImage(named: "Origial+GarlicPopcornL")!, price: 6500),
-        foodItems(name: "오리지널+더블카라멜팝콘L", image: UIImage(named: "Caramel+OrigialPopcornL")!, price: 7500),
+        foodItems(name: "오리지널+갈릭팝콘L", image: UIImage(named: "Original+GarlicPopcornL")!, price: 6500),
+        foodItems(name: "오리지널+더블카라멜팝콘L", image: UIImage(named: "Caramel+OriginalPopcornL")!, price: 7500),
         foodItems(name: "갈릭+더블카라멜팝콘L", image: UIImage(named: "Caramel+GarlicPopcornL")!, price: 7500)
     ]
     let drinkItems: [foodItems] = [
@@ -37,7 +37,7 @@
     let snackItems: [foodItems] = [
         foodItems(name: "오리지널핫도그", image: UIImage(named: "OriginalHotdog")!, price: 5500),
         foodItems(name: "살사핫도그", image: UIImage(named: "SalsaHotdog")!, price: 7500),
-        foodItems(name: "즉석구이(몸통)", image: UIImage(named: "Squid(body)")!, price: 6500),
+        foodItems(name: "즉석구이(몸통)", image: UIImage(named: "Squid(Body)")!, price: 6500),
         foodItems(name: "즉석구이(몸+다리)", image: UIImage(named: "Squid(Whole)")!, price: 10000),
         foodItems(name: "칠리치즈나쵸", image: UIImage(named: "ChillCheeseNachos")!, price: 5500)
     ]
