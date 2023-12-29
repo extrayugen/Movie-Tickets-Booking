@@ -17,6 +17,7 @@
 		1FCC23352B3D4D05000326CF /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC23342B3D4D05000326CF /* TicketViewController.swift */; };
 		27499D582B3CA0C000CF306A /* FoodMarketInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27499D572B3CA0C000CF306A /* FoodMarketInfor.swift */; };
 		27B8E86F2B3BEDE300FC7CF4 /* FoodMarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B8E86E2B3BEDE300FC7CF4 /* FoodMarketViewController.swift */; };
+		465E56FD2B3EA70300428150 /* MarketCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E56FC2B3EA70300428150 /* MarketCartController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1FCC23342B3D4D05000326CF /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		27499D572B3CA0C000CF306A /* FoodMarketInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMarketInfor.swift; sourceTree = "<group>"; };
 		27B8E86E2B3BEDE300FC7CF4 /* FoodMarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMarketViewController.swift; sourceTree = "<group>"; };
+		465E56FC2B3EA70300428150 /* MarketCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCartController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				1FCC23342B3D4D05000326CF /* TicketViewController.swift */,
 				27B8E86E2B3BEDE300FC7CF4 /* FoodMarketViewController.swift */,
 				1FCC23322B3D4CF0000326CF /* ShoppingCartController.swift */,
+				465E56FC2B3EA70300428150 /* MarketCartController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				27499D582B3CA0C000CF306A /* FoodMarketInfor.swift in Sources */,
 				1FCC23352B3D4D05000326CF /* TicketViewController.swift in Sources */,
 				1FB306352B3B1ED600A7BCAD /* SceneDelegate.swift in Sources */,
+				465E56FD2B3EA70300428150 /* MarketCartController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
