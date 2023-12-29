@@ -576,32 +576,29 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOu-5y-DTh">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOu-5y-DTh">
                                 <rect key="frame" x="0.0" y="707" width="395" height="68"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="X5s-Ls-MTa"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="결제하기">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="paymentTapped:" destination="b3F-WK-phn" eventType="touchUpInside" id="vKi-xK-13a"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGJ-9r-nP8">
-                                <rect key="frame" x="-10" y="654" width="424" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGJ-9r-nP8">
+                                <rect key="frame" x="0.0" y="654" width="393" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="goy-nT-yLg"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="총 금액:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuB-lJ-BCU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="총 금액:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuB-lJ-BCU">
                                 <rect key="frame" x="0.0" y="600" width="393" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2901961207" green="0.63529413940000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="GcG-g0-qcq"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -617,7 +614,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="w3y-Wq-CkG">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="w3y-Wq-CkG">
                                         <rect key="frame" x="0.0" y="0.0" width="96" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tKY-zD-AwW">
@@ -633,7 +630,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="aCZ-uf-gsC">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="marketCell" id="aCZ-uf-gsC">
                                         <rect key="frame" x="0.0" y="50" width="393" height="44.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aCZ-uf-gsC" id="dtK-68-yBK">
@@ -646,18 +643,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mMY-4O-wYO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="lOu-5y-DTh" firstAttribute="leading" secondItem="yGJ-9r-nP8" secondAttribute="leading" id="2cP-QY-FSM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lOu-5y-DTh" secondAttribute="trailing" constant="-18" id="Z86-V9-zPN"/>
-                            <constraint firstItem="lOu-5y-DTh" firstAttribute="top" secondItem="yGJ-9r-nP8" secondAttribute="bottom" constant="8" symbolic="YES" id="aAo-XM-JV6"/>
-                            <constraint firstItem="vuB-lJ-BCU" firstAttribute="leading" secondItem="yGJ-9r-nP8" secondAttribute="leading" id="mza-TL-qYJ"/>
-                            <constraint firstItem="mMY-4O-wYO" firstAttribute="bottom" secondItem="lOu-5y-DTh" secondAttribute="bottom" constant="43" id="o1F-XV-Cn7"/>
-                            <constraint firstItem="yGJ-9r-nP8" firstAttribute="top" secondItem="vuB-lJ-BCU" secondAttribute="bottom" constant="8" symbolic="YES" id="oPt-d1-fGR"/>
-                            <constraint firstItem="vuB-lJ-BCU" firstAttribute="trailing" secondItem="yGJ-9r-nP8" secondAttribute="trailing" id="sPs-zQ-WSQ"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="marketInfoTableView" destination="IG6-5T-RY2" id="yFT-ee-9S7"/>
+                        <outlet property="marketTotalPriceLabel" destination="yGJ-9r-nP8" id="f8M-NU-HW3"/>
                         <outlet property="selectedMarketCollection" destination="gWW-mb-bfm" id="ofM-eI-XlB"/>
                     </connections>
                 </viewController>
