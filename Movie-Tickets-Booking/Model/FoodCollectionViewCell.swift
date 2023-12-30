@@ -8,9 +8,9 @@ class FoodCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var foodPrice: UILabel!
    
     var delegate: FoodCellDelegate?
-       var foodItem: foodItems?
+       var foodItem: FoodItems?
 
-       func setup(with food: foodItems) {
+       func setup(with food: FoodItems) {
            foodItem = food
            foodImage.image = food.image
            foodName.text = food.name

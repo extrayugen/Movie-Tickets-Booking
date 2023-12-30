@@ -15,6 +15,9 @@
 		1FB3063F2B3B1ED700A7BCAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB3063D2B3B1ED700A7BCAD /* LaunchScreen.storyboard */; };
 		1FCC23332B3D4CF0000326CF /* ShoppingCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC23322B3D4CF0000326CF /* ShoppingCartController.swift */; };
 		1FCC23352B3D4D05000326CF /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC23342B3D4D05000326CF /* TicketViewController.swift */; };
+		1FCC23392B3FF0B5000326CF /* MarketCartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC23382B3FF0B5000326CF /* MarketCartController.swift */; };
+		1FCC233B2B3FF2C1000326CF /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC233A2B3FF2C1000326CF /* MovieInfo.swift */; };
+		1FCC233D2B3FF2FF000326CF /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCC233C2B3FF2FF000326CF /* CustomTableViewCell.swift */; };
 		2744E8D12B3EEC2E0034C580 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2744E8D02B3EEC2E0034C580 /* FoodCollectionViewCell.swift */; };
 		27499D582B3CA0C000CF306A /* FoodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27499D572B3CA0C000CF306A /* FoodInfo.swift */; };
 		27499D5C2B3D6D7D00CF306A /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27499D5B2B3D6D7D00CF306A /* FoodViewController.swift */; };
@@ -31,6 +34,9 @@
 		1FB306402B3B1ED700A7BCAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FCC23322B3D4CF0000326CF /* ShoppingCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartController.swift; sourceTree = "<group>"; };
 		1FCC23342B3D4D05000326CF /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		1FCC23382B3FF0B5000326CF /* MarketCartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCartController.swift; sourceTree = "<group>"; };
+		1FCC233A2B3FF2C1000326CF /* MovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
+		1FCC233C2B3FF2FF000326CF /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		2744E8D02B3EEC2E0034C580 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
 		27499D572B3CA0C000CF306A /* FoodInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodInfo.swift; sourceTree = "<group>"; };
 		27499D5B2B3D6D7D00CF306A /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +89,7 @@
 				1FCC23342B3D4D05000326CF /* TicketViewController.swift */,
 				1FCC23322B3D4CF0000326CF /* ShoppingCartController.swift */,
 				27499D5B2B3D6D7D00CF306A /* FoodViewController.swift */,
+				1FCC23382B3FF0B5000326CF /* MarketCartController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -102,6 +109,8 @@
 			children = (
 				27499D572B3CA0C000CF306A /* FoodInfo.swift */,
 				2744E8D02B3EEC2E0034C580 /* FoodCollectionViewCell.swift */,
+				1FCC233A2B3FF2C1000326CF /* MovieInfo.swift */,
+				1FCC233C2B3FF2FF000326CF /* CustomTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,9 +196,12 @@
 			files = (
 				1FB306372B3B1ED600A7BCAD /* MainViewController.swift in Sources */,
 				1FCC23332B3D4CF0000326CF /* ShoppingCartController.swift in Sources */,
+				1FCC233D2B3FF2FF000326CF /* CustomTableViewCell.swift in Sources */,
+				1FCC23392B3FF0B5000326CF /* MarketCartController.swift in Sources */,
 				1FB306332B3B1ED600A7BCAD /* AppDelegate.swift in Sources */,
 				27499D5C2B3D6D7D00CF306A /* FoodViewController.swift in Sources */,
 				27499D582B3CA0C000CF306A /* FoodInfo.swift in Sources */,
+				1FCC233B2B3FF2C1000326CF /* MovieInfo.swift in Sources */,
 				1FCC23352B3D4D05000326CF /* TicketViewController.swift in Sources */,
 				2744E8D12B3EEC2E0034C580 /* FoodCollectionViewCell.swift in Sources */,
 				1FB306352B3B1ED600A7BCAD /* SceneDelegate.swift in Sources */,

@@ -7,7 +7,7 @@
 import UIKit
 
 protocol FoodCellDelegate: AnyObject {
-    func foodCellDidTap(food: foodItems)
+    func foodCellDidTap(food: FoodItems)
 }
 
 class FoodViewController: UIViewController {
@@ -24,7 +24,7 @@ class FoodViewController: UIViewController {
             return label
         }()
 
-        var currentItems: [foodItems] = comboItems // 초기값으로 콤보 아이템 설정
+        var currentItems: [FoodItems] = comboItems // 초기값으로 콤보 아이템 설정
 
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -66,7 +66,7 @@ class FoodViewController: UIViewController {
             foodCollectionView.reloadData()
         }
 
-        func showAddToCartMessage(for food: foodItems) {
+        func showAddToCartMessage(for food: FoodItems) {
             messageLabel.text = "장바구니에 \(food.name)가 추가되었습니다."
             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                 self.messageLabel.text = ""
@@ -107,7 +107,7 @@ extension FoodViewController: UICollectionViewDelegateFlowLayout {
     }
 }
     extension FoodViewController: FoodCellDelegate {
-        func foodCellDidTap(food: foodItems) {
+        func foodCellDidTap(food: FoodItems) {
             let alertController = UIAlertController(title: "장바구니에 추가", message: "장바구니에 \(food.name)을(를) 추가하시겠습니까?", preferredStyle: .alert)
 
             let addAction = UIAlertAction(title: "추가", style: .default) { _ in
