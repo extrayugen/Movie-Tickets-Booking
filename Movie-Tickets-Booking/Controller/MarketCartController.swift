@@ -1,80 +1,75 @@
-import Foundation
 import UIKit
 
-
+class MarketCartService {
+    static let shared = MarketCartService()
+    var selectedFoodItems: [FoodItems] = []
+    
+    // 장바구니에 음식 추가
+    func addToCart(food: FoodItems) {
+        selectedFoodItems.append(food)
+        print("Added to cart: \(food.name)")
+    }
+    
+    //총 금액 계산
+    func marCartTotalPrice() -> Int {
+        return selectedFoodItems.reduce(0) { $0 + $1.price }
+    }
+}
 class MarketCartController: UIViewController {
     
     @IBOutlet weak var marketInfoTableView: UITableView!
-    @IBOutlet weak var selectedMarketCollection: UICollectionView!
     @IBOutlet weak var marketTotalPriceLabel: UILabel!
+
     
-    
-    //마켓에서 사용자가 선택한 간식 정보 저장.
-    var selectedItems: [FoodItems] = [
-        FoodItems(name: "즉석구이(몸+다리)", image: UIImage(named: "Snacks/Squid(Whole)")!, price: 10000)
-    ]
-    
-    //이미지 배열
-    var images: [UIImage] = []
+    let marketCartService = MarketCartService.shared
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectedMarketCollection.backgroundColor = .green
-
-//        updateTotalPriceLabel()
-        updateImages()
+        marketInfoTableView.delegate = self
+        marketInfoTableView.dataSource = self
     }
     
-    //총 금액 업데이트
-    // 총 금액 업데이트
-//    func updateTotalPriceLabel() {
-//        let totalPrice = selectedItems.reduce(0) { (result, item) -> Int in
-//            let priceValue = (item.price?.replacingOccurrences(of: "원", with: "")).flatMap { Int($0) } ?? 0
-//            return result + priceValue
-//        }
-//        marketTotalPriceLabel.text = "\(totalPrice)원"
-//    }
-    
-    //이미지 배열 업데이트
-    func updateImages() {
-        for item in selectedItems {
-            images.append(item.image)
-        }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        marketInfoTableView.reloadData()
+        marketTotalPriceLabel.text = "\(marketCartService.marCartTotalPrice())원"
     }
+    
     //결제하기 버튼
     @IBAction func paymentTapped(_ sender: Any) {
         //결제 동작 구현
     }
+    
+    
 }
 
-
-extension MarketCartController: UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
-    
-    //테이블 뷰
+extension MarketCartController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return selectedItems.count
+        return marketCartService.selectedFoodItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = marketInfoTableView.dequeueReusableCell(withIdentifier: "marketCell", for: indexPath)
-        cell.textLabel?.text = selectedItems[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell", for: indexPath) as! FoodCell
+        let foodItem = marketCartService.selectedFoodItems[indexPath.row]
+        
+        cell.foodImageView.image = foodItem.image
+        cell.foodNameLabel.text = foodItem.name
+        cell.foodPriceLabel.text = "\(foodItem.price)원"
+        
         return cell
     }
-    
-    
-    //콜렉션 뷰
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return images.count
+
+    //셀 높이
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140.0
     }
+}
+
+class FoodCell: UITableViewCell {
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        if let imageView = cell.contentView.subviews.first as? UIImageView {
-            imageView.image = images[indexPath.row]
-        }
-        return cell
-    }
-    
+    @IBOutlet weak var foodPriceLabel: UILabel!
+    @IBOutlet weak var foodNameLabel: UILabel!
+    @IBOutlet weak var foodImageView: UIImageView!
     
 }
