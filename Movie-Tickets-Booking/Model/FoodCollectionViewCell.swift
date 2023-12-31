@@ -14,7 +14,12 @@ class FoodCollectionViewCell: UICollectionViewCell {
         foodItem = food
         foodImage.image = food.image
         foodName.text = food.name
-        foodPrice.text = "\(food.price)원"
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        if let foodPriceString = formatter.string(from: NSNumber(value: food.price)) {
+            foodPrice.text = "\(foodPriceString)원"
+        }
     }
     
     override func awakeFromNib() {

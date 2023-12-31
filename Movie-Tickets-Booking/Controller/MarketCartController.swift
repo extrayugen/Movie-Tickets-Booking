@@ -33,7 +33,15 @@ class MarketCartController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         marketInfoTableView.reloadData()
-        marketTotalPriceLabel.text = "\(marketCartService.marCartTotalPrice())원"
+        
+        let totalAmount = marketCartService.marCartTotalPrice()
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        
+        if let totalAmountString = formatter.string(from: NSNumber(value: totalAmount)) {
+            marketTotalPriceLabel.text = "\(totalAmountString)원"
+        }
+        
     }
     
     //결제하기 버튼
@@ -56,6 +64,12 @@ extension MarketCartController: UITableViewDelegate, UITableViewDataSource {
         cell.foodImageView.image = foodItem.image
         cell.foodNameLabel.text = foodItem.name
         cell.foodPriceLabel.text = "\(foodItem.price)원"
+        
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        if let price = formatter.string(from: NSNumber(value: foodItem.price)) {
+            cell.foodPriceLabel.text = "\(price)원"
+        }
         
         return cell
     }
