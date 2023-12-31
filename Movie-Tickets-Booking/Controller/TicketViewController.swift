@@ -27,7 +27,6 @@ class TicketViewController: UIViewController, UITableViewDataSource {
         if let selectedButton = selectedTimeButton {
             UIView.animate(withDuration: 0.3) {
                 selectedButton.backgroundColor = .lightGray
-                selectedButton.setTitleColor(.black, for: .normal)
             }
         }
         
