@@ -16,6 +16,7 @@ struct MovieInfo {
     var people: Int
     var price: Int
     var movieImage: String
+    var selectedTime: String? 
 }
 
 let movie: [MovieInfo] = [

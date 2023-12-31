@@ -108,8 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				27499D572B3CA0C000CF306A /* FoodInfo.swift */,
-				2744E8D02B3EEC2E0034C580 /* FoodCollectionViewCell.swift */,
 				1FCC233A2B3FF2C1000326CF /* MovieInfo.swift */,
+				2744E8D02B3EEC2E0034C580 /* FoodCollectionViewCell.swift */,
 				1FCC233C2B3FF2FF000326CF /* CustomTableViewCell.swift */,
 			);
 			path = Model;
