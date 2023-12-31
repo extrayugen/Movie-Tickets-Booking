@@ -21,7 +21,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDateLabel()
-        updateDateTime()
         
     }
     
@@ -40,15 +39,12 @@ class MainViewController: UIViewController {
     }
     
     func setupDateLabel(){
-        dateLable.adjustsFontSizeToFitWidth = true
-        dateLable.minimumScaleFactor = 0.5 // 최소 50% 크기까지 폰트 크기 축소
     }
     
     func updateDateTime() {
         let formatter = DateFormatter()
         formatter.locale = Locale(identifier: "ko_KR")
         formatter.dateFormat = "yyyy년 MM월 dd일 a hh시 mm분"
-        dateLable.text = formatter.string(from: Date())
         
         // 옵션: Timer를 사용하여 날짜/시간을 주기적으로 업데이트
         Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in

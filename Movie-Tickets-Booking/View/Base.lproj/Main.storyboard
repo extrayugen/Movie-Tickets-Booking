@@ -18,25 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="NEGABOXLogo" translatesAutoresizingMaskIntoConstraints="NO" id="20H-2j-wCx">
-                                <rect key="frame" x="-24" y="251" width="440" height="168"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="168" id="h3p-iP-O7w"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="날짜/ 요일/ 시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rv-od-eT8">
-                                <rect key="frame" x="15" y="109" width="363" height="123"/>
-                                <color key="backgroundColor" red="0.2901961207" green="0.63921570780000003" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="tintColor" systemColor="tintColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="123" id="Oqe-w3-3AJ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" red="0.99607843159999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nym-sG-BKF">
-                                <rect key="frame" x="138" y="444" width="117" height="260"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nym-sG-BKF">
+                                <rect key="frame" x="208" y="381" width="169" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" image="Main/BuyingFoods"/>
                                 <connections>
@@ -44,8 +28,9 @@
                                     <segue destination="U90-VV-Kaj" kind="show" id="UKy-vp-l2A"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohr-cJ-Dv9">
-                                <rect key="frame" x="14" y="443" width="117" height="260"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohr-cJ-Dv9">
+                                <rect key="frame" x="16" y="382" width="169" height="274"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" image="Main/BuyingTicket"/>
                                 <connections>
@@ -53,48 +38,18 @@
                                     <segue destination="2n4-jQ-dV8" kind="show" id="ybL-9U-syD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6H-vq-CNR">
-                                <rect key="frame" x="261" y="444" width="117" height="260"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="117" id="SPN-P7-YEc"/>
-                                    <constraint firstAttribute="height" constant="260" id="dmt-FL-5q6"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" image="Main/CheckingReservation"/>
-                                <connections>
-                                    <action selector="confirmTicketTapped:" destination="50B-CT-OW5" eventType="touchUpInside" id="UUl-pN-Dqj"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="NEGABOXLogo" translatesAutoresizingMaskIntoConstraints="NO" id="20H-2j-wCx">
+                                <rect key="frame" x="-40" y="72" width="472" height="301"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6S0-x2-IhZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ohr-cJ-Dv9" firstAttribute="leading" secondItem="6S0-x2-IhZ" secondAttribute="leading" constant="14" id="0do-7p-aaJ"/>
-                            <constraint firstItem="z6H-vq-CNR" firstAttribute="trailing" secondItem="6rv-od-eT8" secondAttribute="trailing" id="0op-TE-kaF"/>
-                            <constraint firstItem="6S0-x2-IhZ" firstAttribute="bottom" secondItem="z6H-vq-CNR" secondAttribute="bottom" constant="114" id="2Ty-Tc-5qO"/>
-                            <constraint firstItem="6rv-od-eT8" firstAttribute="leading" secondItem="6S0-x2-IhZ" secondAttribute="leading" constant="15" id="5Pm-wb-N0H"/>
-                            <constraint firstItem="Nym-sG-BKF" firstAttribute="leading" secondItem="ohr-cJ-Dv9" secondAttribute="trailing" constant="7" id="7Lj-v6-meb"/>
-                            <constraint firstItem="20H-2j-wCx" firstAttribute="leading" secondItem="QDj-Dd-LTc" secondAttribute="leadingMargin" constant="-40" id="7UT-Ou-zwr"/>
-                            <constraint firstItem="z6H-vq-CNR" firstAttribute="bottom" secondItem="Nym-sG-BKF" secondAttribute="bottom" id="8bw-R7-7c3"/>
-                            <constraint firstItem="z6H-vq-CNR" firstAttribute="top" secondItem="20H-2j-wCx" secondAttribute="bottom" constant="25" id="Bqk-If-55R"/>
-                            <constraint firstItem="20H-2j-wCx" firstAttribute="centerX" secondItem="Nym-sG-BKF" secondAttribute="centerX" id="GvS-2v-j2I"/>
-                            <constraint firstItem="6rv-od-eT8" firstAttribute="centerX" secondItem="QDj-Dd-LTc" secondAttribute="centerX" id="Lth-E7-Z9z"/>
-                            <constraint firstItem="ohr-cJ-Dv9" firstAttribute="top" secondItem="20H-2j-wCx" secondAttribute="bottom" constant="24" id="TXL-gP-7Yu"/>
-                            <constraint firstItem="z6H-vq-CNR" firstAttribute="leading" secondItem="Nym-sG-BKF" secondAttribute="trailing" constant="6" id="Uu4-4K-rjE"/>
-                            <constraint firstItem="6S0-x2-IhZ" firstAttribute="trailing" secondItem="z6H-vq-CNR" secondAttribute="trailing" constant="15" id="WKR-b6-BWP"/>
-                            <constraint firstItem="20H-2j-wCx" firstAttribute="top" secondItem="6rv-od-eT8" secondAttribute="bottom" constant="19" id="cnK-dq-oWa"/>
-                            <constraint firstItem="6rv-od-eT8" firstAttribute="centerX" secondItem="QDj-Dd-LTc" secondAttribute="centerX" id="isH-dN-6Vw"/>
-                            <constraint firstItem="6S0-x2-IhZ" firstAttribute="bottom" secondItem="ohr-cJ-Dv9" secondAttribute="bottom" constant="115" id="mrR-cx-xjV"/>
-                            <constraint firstItem="20H-2j-wCx" firstAttribute="centerX" secondItem="QDj-Dd-LTc" secondAttribute="centerX" id="n5W-3y-gdx"/>
-                            <constraint firstItem="z6H-vq-CNR" firstAttribute="top" secondItem="Nym-sG-BKF" secondAttribute="top" id="oFP-gn-r6Z"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZNc-4O-Tci"/>
                     <connections>
                         <outlet property="buyFoodButton" destination="Nym-sG-BKF" id="86E-h5-x2Q"/>
                         <outlet property="buyTicketButton" destination="ohr-cJ-Dv9" id="AfC-gy-L1U"/>
-                        <outlet property="confirmTicket" destination="z6H-vq-CNR" id="Trv-8q-oo3"/>
-                        <outlet property="dateLable" destination="6rv-od-eT8" id="q2n-Qq-gea"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ax-SV-Ow0" sceneMemberID="firstResponder"/>
@@ -563,13 +518,9 @@
     <resources>
         <image name="Main/BuyingFoods" width="116" height="260"/>
         <image name="Main/BuyingTicket" width="116" height="260"/>
-        <image name="Main/CheckingReservation" width="116" height="260"/>
         <image name="NEGABOXLogo" width="1900" height="790"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
