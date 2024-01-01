@@ -72,7 +72,6 @@ class ShoppingCartController: UIViewController {
         if let firstMovie = cartItems.first {
             print("영화 제목: \(firstMovie.title)")
             print("영화 시간: \(firstMovie.selectedTime ?? "미정")")
-            print("관람 인원: \(firstMovie.people)명")
             print("결제 금액: \(firstMovie.price)원")
         }
     }
