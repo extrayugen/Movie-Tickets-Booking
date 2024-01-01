@@ -59,10 +59,18 @@ class ShoppingCartController: UIViewController {
             selectMovieImageView.image = UIImage(named: firstItem.movieImage)
             movieTitleLabel.text = firstItem.title
             movieTimeLabel.text = firstItem.selectedTime ?? "시간 미정"
-            moviePriceLabel.text = "\(firstItem.price)원"
+            
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .decimal
+            
+            if let formattedPrice = formatter.string(from: NSNumber(value: firstItem.price)) {
+                moviePriceLabel.text = "\(formattedPrice)원"
+            }
             
             let totalPrice = cartItems.reduce(0) { $0 + $1.price }
-            totalPriceLabel.text = "\(totalPrice)원"
+            if let formattedTotalPrice = formatter.string(from: NSNumber(value: totalPrice)) {
+                totalPriceLabel.text = "\(formattedTotalPrice)원"
+            }
         }
     }
     
